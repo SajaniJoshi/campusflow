@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/CourseComparison.css";
-import courseCompareImage from "../assets/compare_modules.png";
+import courseCompareImage from "../assets/images/compare_modules.png";
 
 const CourseComparison = () => {
   return (
@@ -14,7 +14,7 @@ const CourseComparison = () => {
         <h2 className="courseComparison__title">
           Elevating Education: Unmatched Modules, Unique Features
         </h2>
-        <p className="courseComparison__description">
+        <p className="courseComparison__description text-sm">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <button type="button" className="courseComparison__button">

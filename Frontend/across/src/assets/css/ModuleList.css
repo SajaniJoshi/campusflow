@@ -1,0 +1,16 @@
+.dropdowns {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.spinner {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

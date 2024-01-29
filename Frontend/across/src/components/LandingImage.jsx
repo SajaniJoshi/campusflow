@@ -4,7 +4,7 @@ import "../assets/css/LandingImage.css";
 const LandingImage = ({ source, title }) => {
   return (
     <>
-      <section id="home" style={{ paddingTop: "85px" }}>
+      <section id="home" style={{ paddingTop: "75px" }}>
         <div className="landingImage">
           <img
             className="landingImage__banner"

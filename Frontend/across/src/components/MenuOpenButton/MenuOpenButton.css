@@ -1,0 +1,24 @@
+#menu-open-button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#menu-open-button svg rect {
+  transition: all .2s ease-in;
+}
+
+#menu-open-button svg path {
+  transition: all .2s ease-in;
+}
+
+#menu-open-button:hover svg rect {
+  fill: var(--primary-color);
+  fill-opacity: 1;
+}
+
+#menu-open-button:hover svg path {
+  fill: #fff;
+}

@@ -1,0 +1,67 @@
+#transferHeading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#user {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#user_details {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#user_details,
+h5 {
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+/* Custom CSS for the table heading cells */
+.table {
+    border: 3px solid #949494;
+}
+
+.table thead tr,
+th {
+    border-bottom: 3px solid #949494;
+    font-size: large;
+}
+
+/* Custom CSS for the table rows */
+.table tbody tr {
+    border-bottom: 2px solid #dddddd;
+    /* Adjust the thickness and color as needed */
+}
+
+#backToUser {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.toast-slide-enter {
+    transform: translateX(100%);
+}
+
+.toast-slide-enter-active {
+    transform: translateX(0);
+    transition: transform 600ms ease-in-out;
+}
+
+.toast-slide-exit {
+    transform: translateX(0);
+}
+
+.toast-slide-exit-active {
+    transform: translateX(100%);
+    transition: transform 600ms ease-in-out;
+}

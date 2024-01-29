@@ -1,0 +1,66 @@
+.test__div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.compareModules__heading {
+  margin: 10px 0;
+  font-size: calc(1.225rem + 0.8vw);
+  text-align: center;
+}
+
+.compareModulesWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 35px;
+  padding-top: 35px;
+
+}
+
+.compareModulesWrapper>h4 {
+  width: 5%;
+  font-size: calc(1rem + 0.3vw);
+}
+
+.similarModuleCards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.similarModuleCard {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: start;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+
+}
+
+.similarModuleName {
+  font-weight: 700;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+.similarModuleUniversity {
+  font-weight: 500;
+}
+
+.similarModuleContent {
+  padding: 0.5rem;
+}
+
+.alert {
+  width: 78%;
+  margin: 0 auto;
+}

@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://tuc.web.engineering/module#"
+   xmlns:ns2="http://tuc/course#"
+   xmlns:ns3="http://across/university#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10023S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automative Lighting</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10023S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10066W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electricity Market</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10066W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20004W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCP/IP Networks and Applications</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20004W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10067S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector, Raster Computer Graphics and Visualization</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10067S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10047">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metrology</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10047</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To understand the basic working principles of electrical and electronic measuring instruments. To receive the skills to managing and operating analogue and digital instruments for a particular application. To learn the ways of presenting and interpreting results. To calculate the uncertainty of the direct and undirect single and multiple measurements.Introduction to metrology and measuring instruments; errors and uncertainties; instrument transformers and their applications; resistance, voltage and current measurements; power and energy measurements; impedance measurement; frequency measurement; analog-to-digital converters; digital oscilloscope.
+Requirements:Electrical Circuits 1.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20006">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antennas and propagation (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20006</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of the course is to acquaint the students with radiation, transmission and reception of electromagnetic waves, with particular emphasis on the different antenna designs and applications of antennas in wireless communication systems. Training skills for using of software for computer-aided analysis and design of consumer antennas, taking graphical environment 4NEC2 as an example.Classification and properties of antennas. Basics of radiation theory. Radiation pattern, antenna parameters. Range equation. Electromagnetic field radiated by elementary antennas: Hertz dipole and magnetic dipole. Radiation field of a symmetric thin-wire antenna. Features of a short dipole. Antennas over a ground plane. Feeding of wire antennas, impedance matching, baluns. Antenna arrays, phased arrays. Wire reflectors and directors, Yagi-Uda antennas. Travelling-wave antennas. Frequency-independent and log-periodic antennas. Aperture antennas. Radiation patterns of nonuniform feeded arrays and aperture antennas. Horn antennas, parabolic-reflector antennas, lens antennas. Radiation from microstrips and slots. Antennas in consumer appliances. Propagation of electromagnetic waves in the Earth’s atmosphere, urban and country areas. Wave propagation in different frequency bands.
+Requirements:High frequency techniques or equivalent
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10003">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control of electrical drives 1</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10003</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of the subject is to develop the theoretical and practical student's knowledge on energy conversion in open loop and closed loop automatically controlled electrical drives. Discussion of condtruction and features of electrical drives. Students introduction into safety regulatoin when working in enviroment with converter controlled electro-mechanical drive systems. Students acquaint with the methods of analysis and mathematical description of electric drive system.Examples and construction of automatically controlled electrical drives for energy conversion. Fundamentals of electric drives: moment of inertia, different types of frictional torques and examples of active torque, effect of gearing, torque - speed characteristics of electrical motors and generators, multi-quadrant operation of electric motors and converter controlled drives, stable and unstable operating points, power flow and losses in a three-phase induction motor and three-phase synchronous generator, reference frame transformation, variables observed from several reference frames.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Geometrie_und_Analysis__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20002">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear and advanced control of electromechanical systems (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20002</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of the subject is to develop the theoretical and practical student's knowledge on nonlinear control methods and adaptive techniques used in electromechanical systems. The acquiring experience by students in design of estimation systems of physical quantities and parameters of the electromechanical subsystem. Acquainting students with the methods for stability analysis of nonlinear electromechanical systems. The acquiring experience by students in the experimental investigations of the nonlinear and the adaptive electromechanical system.Overview of nonlinearly and adaptively controlled electromechanical systems. Non-linear controllers for time-minimal and without overshoot control of the electromechanical subsystems with DC motors and Permanent Magnets Sychronous Motors. Off-line and on-line estimation techniques of the parameters and the physical quantities of the electrical machines. Vector control methods. Space vector modulation techniques of transistor converters. Dynamic programming method. The analysis of stability of the nonlinearly controlled systems. Digital control methods of electromechanical systems. Experimental exercises with electromechanical systems nonlinearly controlled by Digital Signal Processors. Experimental exercises of the adaptive on-line estimation techniques.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics and telecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10005">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical machines 1</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10005</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Achievement of skills of analysis of asynchronous machines and transformers.Transformers: construction, principles of working, mathematical models. One-phase and three-phase transformers. Asynchronous motors: construction, principles of working, mathematical models. Transformations of co-ordinate systems, substitute scheme. Symmetrical steady state.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Modellierungsseminar__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10033">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High frequency techniques 1</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10033</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of the course is to acquaint the students with basic topics of high frequency techniques: components, instruments, measurements, applications. Training skills of calculation of voltages and currents in transmission lines and solving simple problems of impedance matching.Examples of applications of high frequency devices and systems. Electromagnetic waves in transmission lines (coaxial lines, striplines, microstrips) and in waveguides. Wave types (TEM, TE and TM) and wave modes. Definitions of current, voltage, characteristic impedance. Impedance matching (narrowband and broadband). The Smith chart. Multiport circuits. The scattering matrix. Passive microwave elements: reactance irises, matched loads, stub tuners, attenuators, phase shifters, power dividers, hybrid junctions, directional couplers. Resonators. Ferrite devices. Semiconductor devices. MEMS. Basics of high frequency measurements. Network analyzers.
+Requirements:Circuits and Signals, Electromagnetic Field Theory.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10073S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introductory Physics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10073S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10016">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protection against interference</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10016</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Knowledge on basic phenomena related to generation, propagation, basic methods of measurement and study of disturbing electromagnetic signals, their influence on electronic and electrical equipment and systems. Knowledge on on functioning of elements and devices or methods of protection of electronic and electric equipment and systems against various types of disturbing electromagnetic signals. Skills of selection and application of basic protection measures against main types of disturbances. Skills of planning and performing measurements of disturbing signals, their propagation and coupling effects and basic characteristics and parameters of protective elements and devices. Skills of using measurment equipment. Skills of elaboration, illustration, analysis and interpreatation of measurement results.LectureBasic terms and definitions. Sources of disturbing electromagnetic signals and their characteristics. Characteristics of disturbing signals in electrical installations and signal transmission lines. Ways of disturbing effects of various electromagnetic signals, electromagnetic couplings, travelling waves. Elements and devices for protection against interference in electrical installations and signal transmission lines. Equipotentialization, cable routing, screening techniques. Zone concept of complex protection against interference.Laboratory classIntroduction. Electrostatic discharge (ESD) - method of ESD testing and measurements of characteristics of ESD impulse currents. Investigation of travelling wave phenomena in electrically long lines and wires. Measurements of electromagnetic coupling effects between various cables. Estimation of threat connected with voltages and currents induced due to impulse electromagnetic field in various cables and antennas. Measurements and testing of protective electrical characteristics and parameters of basic types of protective elements and devices, e.g. power mains filters, gas discharge tubes, varistors and other elements and devices used for surge protection in electrical installation and signal transmission lines.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10027">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical circuits 2</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10027</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To receive the knowledge of main rules describing the phenomenas and dependences in AC circuits in steady state and DC transient state circuits. To have the ability to calculate useful parameters of DC transient state circuit and 3-phase loads in a steady state.Self inductance and mutual inductance. Analysis of circuits with magnetic coupling. Air transformer. Calculations and measurement of power in 3-phase systems. Balanced and unbalanced 3-phase circuits. Analysis of transient state in linear RLC circuits. Laboratory experiments for the phenomenas described above. Applying the simulations for analysis and design of circuits. Interpretation of results.
+Requirements:Electrical Circuits 1 or relevant.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Bewegungsdesign,_Kurven_-,_Schritt_-_und_Planetengetriebe__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10026">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital signal processing</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10026</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of the course is to acquaint the students with the basics of the digital signal processing. Student is familiar and can apply methods of signal analysis in time and frequency domains. Student is able to use methods of digital filter design and is familiar with issues of digital filter implementation.Application area of digital signal processing. Signal classification. Sampling of continuous time signals: the sampling theorem, antialiasing filter, digital resampling, practical aspects of A/D and D/A conversion. Properties and application of the Discrete Fourier Transform; Fast Fourier Transform algorithms; analysis of nonstationary signals. Z-transform: properties and application. Description of discrete time signals and systems: impulse response, difference equation, Z-transform, transfer function, frequency response, state space representation. Stability. Overview of digital filter analysis, synthesis and application: infinite impulse response and finite impulse response filters, commonly used filters, time and frequency domain parameters, windowing, impulse response, linear phase filters, linear and circular convolution. DSP implementation issues.Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10002">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basics of lighting technology</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10002</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Familiarizing students with basic light quantities, units and electric light sources. Using luxmeter and luminance meter. Teaching the methodology of main photometric measurements. Familiarizing with current problems in illuminating engineering.Vision and light. Basic light quantities and units (luminous flux, luminous intensity, illuminance, luminance). Spectral distribution of light quantities. Lambert law. Correlation between illuminance and distance from the source. Types and parameters of light sources. Spatial distribution of light intensity. Basic measurements in light technology. Procedures of chosen light measurements. Using chosen light meters (luxmeter, luminance meter). Standarization in lighting technology - introduction to lighting design. Light - human interaction. Energy efficiency in lighting.Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10059W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visualization of Industrial Processes</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10059W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10051">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet of Things</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10051</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The course is designed to teach students about the Internet of Things (IoT), which relates to the study of sensors, serial data buses, actuators, cloud computing, MQTT protocol and controllers, IoT applications, system security and examples overview (building automation, transportation, healthcare, industry). After completing the course a student will explain principles of operation of a variety of IoT digital subsystems and will be able to design a simple IoT application.Lecture: Topics address main concepts behind the Internet of Things (the IoT paradigm, smart objects, convergence of technologies, security, protocols), technologies related to the Internet of Things, single board microcomputer IoT nodes, microcontroller based IoT nodes, sensors and serial interfaces.Laboratory class: Practical exercises in programming and designing IoT systems elements based on microcontrollers, single board microcomputers, FPGA and softcore processors and digital sensors.Project: Can encompass a broad field but should be relevant and related with the Internet of Things type of applications. (eg. microprocessor based control of an exemplary system, scheme, calculations, software, peripheral devices, cloud computing / database, web browser based data presentation and control). Dependant on how many participants of the course, a specialization can be made within the project but an understanding of the full design flow is vital for all participants.
+Requirements:Fundamentals of Digital Technique.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Experimentalphysik_II__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10010W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modern Wireless Networks Technologies</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10010W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10012">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optical fibers</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10012</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Introduction to telecommunication systems. Learning the principles and methods for measuring properties of optical fiber components and systems. Learning determination the parameters of the optical fiber telecommunication link. Education application rules and service of specialized measurement equipment.Telecommunications systems. Measurements of physical parameters of optical fibers. Measurements of optical fiber components. Measurements of attenuation of optical fibers. Reflectometric measurements of optical fiber telecommunication link. Power distribution in optical fibers (transverse modes). Spectral attenuation. Optical fibers connectors.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Stochastik__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10063W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Networks</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10063W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10054W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Automation</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10054W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10018">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radio and television devices</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10018</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The principal objective of lectures is to cover the fundamentals of work and structures of radio and television receivers and radiocommunication transceivers. The CD and DVD basis of works, and introduction to some elements of electroacoustic are presented. Superheterodyne receiver. ZIF (Zero Intermediate Frequency) receiver. Main functional blocks of radio receiver. Signals in radio receiver - analysis in MATLAB. Stereophony and stereo modulation. Digital radiocommunication transceivers. Analysis structure of radio receivers and mobile phones. IC for radiocommunication blocks. RDS system. Television receiver - main functional blocks. RFID systems. CD, DVD. Electroacoustic elements - loudspeakers, headphones, microphones.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Computational_Science_I__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10042">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project in IT networks</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10042</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Acquiring skills in creating and presenting projects of telecommunication and computer networks.Students prepare individual projects of the network structure for assumed enterprises (usually with a few departments). In typical case the prepared project includes a selected components like telephone network, computer network with security solutions, dedicated power supply network and some specific components like alarm signaling network or internal television system (CCTV). The finished project should include analysis of demands, suggestion of solutions, diagrams of network structure and cost calculation (capex and opex). The project can also include other parts, specific for particular application (e.g. analysis of legal aspects of using radio devices). The prepared projects are presented and discussed during classes.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10039">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application of Computer Science in Electrical Engineering</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10039</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of this course is to acquire the skills of using engineering software to analyse and synthesis of electrical circuits. Students will be able to evaluate and explain the results of simulation accordingthe rules of electrical engineering. They will use the software to make few projects of electric circuits of real devices. This course allows them to join the theoretical knowledge with practical skills of simulation and make some useful applications.Introduction to PSpice. Utilization of voltage and current dividers in DC circuit analysis. Parametric analysis. Transient state in DC circuit. Ignition coil. RLC serie circuit. Switch on/off the DC voltage and current source. Use PSPICE to analyze AC steady-state circuits. Simplification of networks using Thevenin's theorems. Applying parametric analysis to find the maximum of active power. Drawing of frequency response plots for resonant circuits. Non-sinusoidal signals. Measures of electric quantities in AC circuits. Three-phase circuits. Analysis and processing of measuring data by means of spreadsheet (measures in real circuit and simulation).
+Requirements:Electrical Circuits 1, 2.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10025">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control of electrical drives 2</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10025</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Transfer of knowledge about the aims of control and the features of typical automatically controlled electrical drives with permanent magnets synchronous motor, brushless DC motor, stepping motor and asynchronous motor. Acquainting students with design of the current control loop, the torque control loop, the speed control loop and position control loop. Acquiring experience by students in the configuration, maintenance and operation of automatically controlled electrical drives.Overview of automatic control system. Current, speed and position sensors (current transducers, enkoders, resolvers, etc.). The mathematical models of electrical motors and power converters. The structure and the synthesis of closed loop drive systems. Servo drive systems. Control of DC motors in the field-weakening region. The control methods of induction motors and synchronous motors. Scalar and Field Oriented Control (FOC) of AC machines. Control methods of stepping motor. The scalar and the field-oriented control method. Experimental exercises with automatically controlled electrical drives. Examples of the use of microprocessor control systems in electric drives.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Bewegungsdesign,_Kurven_-,_Schritt_-_und_Planetengetriebe__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10049">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coding and Transmission of Signals</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10049</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To familiarize students with the methods of the source and channel encoding of signals, principles of passband and baseband digital transmission, types of modulation and the influence of the parameters of the signal and disturbances on the quality of the transmission. Practical verification of the knowledge.Mathematical description of the noise in the transmission medium. The basic concepts of the theory of detection and evaluation of the telecommunications signals. Characteristics of the baseband signals and encoding methods. Digital modulation methods: BPSK, QPSK, AM/PSK, MSK. Multiple methods of access: SDMA, TDMA, CDMA. Principles of channel coding: the concept of code distance block, cyclic and convolution codes.e.
+Requirements:Circuits and signals, Principles of telecommunication
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10029">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical machines 2</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10029</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To familiarize students with the construction equipment and low voltage electrical installations. Learning the basic principles of the selection of electrical equipment in normal operating conditions and fault conditions. To teach the principles and criteria of the dimension of electric shock protections in low and high voltage installations. Education rules for the use of diagnostic equipment and conduct testing of electrical equipment with the basic physical phenomena occurring in them. To familiarize students with rules preparation of technical documentation for the electrical installation.Complete with module content:Environment of electrical equipment. Standardization and typification. Insulation of electrical equipment. Work and short currents. Impedance of electric power system elements. Thermal effect of work and short currents. Electromagnetic effect of short currents. Electrical arc and arc interruption. Switches. Short currents suppresion. Measuring transformers. Low-voltage power networks. Voltage range of an electrical installations. Selection of electrical devices. Live potection conductors against overcurrent. Supply of buildings. Electrical installations of buildings. Requirements for special installations, locations (construction and demolation site of buildings, caravan parks, swimming pools). Design principles of electrical installations. Switch in low voltage installation. Cables and conductors of electric power system. Selection of conductors.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Bewegungsdesign,_Kurven_-,_Schritt_-_und_Planetengetriebe__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10060W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grid Integration of Renewable Energy</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10060W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20004">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCP/IP Networks and Applications (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20004</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Acquiring detailed knowledge of family of TCP/IP protocols and their applications.History of family of TCP/IP protocols, their architecture and development. Structure of IP packets in version 4 and 6. Addressing devices in IP networks. IP multicast groups and multicast addressing. Structure of TCP segment and UDP datagram. TCP communication session. Flow control in TCP transmission. Auxiliary protocols used in TCP/IP networks: ICMP, ARP, DHCP and other. Static and dynamic routing in TCP/IP networks. Idea of autonomous system (AS). Interior and exterior routing protocols. Obtaining provider independent (PI) IP addresses. Virtual Local Area Networks (VLAN). IP routing between VLANs. MPLS networks. Network Address Translation protocol (NAT). Traffic aggregation and load balancing in TCP/IP networks. Voice over IP (VoIP) technology. Selected services in TCP/IP networks.
+Requirements:Network technologies or equivalenStudents are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics and telecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Computational_Science_I__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10071W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptography</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10071W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20014S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Design and Analysis of Metamaterials</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20014S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10065W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Power Transmission and Distribution</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10065W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20005W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wireless Broadcasting Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20005W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10007">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiberoptic networks</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10007</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The principle objective of the course is to familiarize the students with the basic topics of fiberoptic networks: components, operation, measurements and design. Teaching and training skills of calculations necessary to analyse and design fiberoptic networks.General aspects of fiberopic networks. Network topologies. WDM networks. Passive and active components of the network. Noise and SNR. Dispersion. Non-linear effects. Chosen issues of design, contructing, measurements and operation of fiberoptic networks. Basic calculations in fiberoptic networks: energy budget, dispersion, SNR, ORL.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Geometrie_und_Analysis__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20010">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master thesis</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20010</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To familiarize with the methodology of solving research problems and complex issues in the field of electrical engineering. Deepening skills of proper selection and use of literature sources and the use of information in the scientific and technical databases. Training a literature materials analysis skills to identify new aspects to solve the problem posed in the thesis. Acquiring the ability to formulate a research problem, or technical and the selection of methodologies and tools to solve the problem (including computational tools / software). Strengthening the skills of planning and scheduling the implementation of the research or engineering task. Acquiring the ability to determine the proper plan and structure of the thesis as a report on the implementation of the research task or a complex engineering problem documentation. Deepening the skills of analyzing the results of research and experimentation and preparation of documentation for complex engineering problem. Consolidation of the skills of project assumptions or research hypothesis verification, drawing concusions, critical analysis and evaluation of the results.Specialized knowledge and skills related to the subject of the thesis - obtaining information from literature sources.Formulation of technical problems or research hypotheses based on the assessment of the current state of knowledge in the area corresponding to a thesis. Knowing development trends in selected a research area that allows the formulation of a new solution of technical issue. The use of interdisciplinary knowledge to improve existing solutions to of selected scientific and technical problems.Planning and realization of complex engineering or research task. The use of advanced tools and computer techniques to the implementation of a technical problem or to support research. Verification of the solution of research task or complex engineering problem using the methods and tools of theoretical and experimental analysis. Methodology of the research task solutions analysis and drawing conclusions. Development of results and documentation of completed tasks.
+Requirements:ACCEPTED INDIVIDUALLY.
+BEFORE adding this module to the learning agreement student is obliged to contact with the faculty coordinator (we.erasmus@pb.edu.pl) and present the transcript of records (1st and 2nd level of studies). Declaration of accepting by a future tutor is also required.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10028">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical equipment and installations</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10028</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To familiarize students with the construction equipment and low voltage electrical installations. Learning the basic principles of the selection of electrical equipment in normal operating conditions and fault conditions. To teach the principles and criteria of the dimension of electric shock protections in low and high voltage installations. Education rules for the use of diagnostic equipment and conduct testing of electrical equipment with the basic physical phenomena occurring in them. To familiarize students with rules preparation of technical documentation for the electrical installation.Complete with module content:Environment of electrical equipment. Standardization and typification. Insulation of electrical equipment. Work and short currents. Impedance of electric power system elements. Thermal effect of work and short currents. Electromagnetic effect of short currents. Electrical arc and arc interruption. Switches. Short currents suppresion. Measuring transformers. Low-voltage power networks. Voltage range of an electrical installations. Selection of electrical devices. Live potection conductors against overcurrent. Supply of buildings. Electrical installations of buildings. Requirements for special installations, locations (construction and demolation site of buildings, caravan parks, swimming pools). Design principles of electrical installations. Switch in low voltage installation. Cables and conductors of electric power system. Selection of conductors.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Bewegungsdesign,_Kurven_-,_Schritt_-_und_Planetengetriebe__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10041">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automotive electronics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10041</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Teaching a variety of problems related to contemporary automotive electronics. The student will explain electrical principles as they apply to automotive electronics and demonstrate proper use of electrical test equipment.Lecture: Topics address electrical principles, semiconductor and integrated circuits, digital fundamentals, microcomputer systems based on microcontrollers, and electrical test equipment as applied to automotive technology. Laboratory class: Practical exercises in programming microcontrollers for automotive applications, diagnosis of selected automotive electronics systems.
+Requirements:no prerequisites required
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10055W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial Networks</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10055W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10075S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Databases Systems and Security</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10075S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10061W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power System Analysis</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10061W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10014">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10014</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Description:Getting knowledge of power system operation under normal and abnormal conditions. Getting knowledge of per unit system and symmetrical components method to be used in power system analysis. Getting knowledge of the methods and approaches to be used in analysis of load flow, faults and transients analysis.Introduction to power systems. General requirements and conditions in power systemoperation. Fundamentals of power generation, transmission and distribution. The per-unit system and symmetrical components Power flow analysis. Symmetrical and unsymmetrical faults analysis. Power system transients. Voltage and power control. Protective relays. Individual solving of four case studies which involves: per unit system, load flow and symmetrical and unsymmetrical faults.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10069S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer-Based Measurement Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10069S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10023W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SQL Based Data Analysis and Reporting</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10023W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20007">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Compatibility (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20007</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Knowledge on basic phenomena related to generation, propagation and effects of electromagnetic disturbances. Knowledge on methods of EMC (Electromagnetic Compatibility) testing, both in immunity and emission, and basic characteristics of EMC test equipment. Skils of using EMC equipment and performing basic EMC and related supplementary tests and measurements. Skills of proper illustration, interpretation and assessment of the test results. Working on EMC testing in a team.Introduction to EMC (Electromagentic Compatibility), EMC standards. Sources of electromagnetic disturbances, their characteristics and related threat. Basic principles of disturbing effects of various electromagnetic signals, electromagnetic couplings. EMC testing of immunity of electronic and electrical equipment to electromagnetic disturbances (principles, test set-ups and equipment, test levels). EMC testing of electromagnetic emissions from electronic and electrical equipment (principles, test set-ups and equipment, acceptable levels). Screening efficency. Practical aspects of electromagnetic compatibility.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computerscience. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics andtelecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10062W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renewable Energy Technologies</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10062W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10056W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Methods in Automatics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10056W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20013W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control Theory</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20013W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10009">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microprocessor technique and microcontroller</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10009</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Lectures:Binary arithmetic. Basic topics of the microprocessor engineering. Microprocessor system structures and main components: processors, memories, basic peripheral devices, standard buses, additional circuits. Interrupt systems. Methods of input/output device service. Selected microcontroller family: standard structure, instruction list, peripherals, interrupts, extensions. Input/output binary and analogue devices. Laboratory class:Practical exercises in programming of basic algorithms and I/O device service in machine- and high-level language.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Geometrie_und_Analysis__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10034">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High voltage technique</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10034</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The principal objective of lectures is to cover the fundamentals of high-voltage test technique, generation and measurement of high voltages, electrical breakdown in gases, solid and liquid dielectric, travelling waves in high voltage lines, lightning and overvoltage protection and to present the basics of high voltage insulation design.Skills of performing measurements, tests and studies on high voltage generators, electrical withstand of insulators and insulating materials and measurements of high voltages and high currents. Skills of safe work with high voltage electrical devices and apparatus.LectureHigh voltage test technique. Generation and measurement of high alternating and direct voltages. Generation and measurements of impulse voltages and currents. Dielectric loss and capacitance measurements. Partial discharge measurements. Disturbances in high voltage laboratory. Electrical breakdown in gases, solid and liquid dielectric. Travelling waves in high voltage lines. Reflection of travelling waves. Reflection of travelling waves against transformers. Lightning, mechanism, philosophy of protection, lightning protection of structures. Lightning and switching transients in power system. Protection against overvoltages. Surge protective devices. Insulation coordination. Construction elements for high voltage circuits. High voltages cables and capacitors. Design, materials and testing. High voltage Transformers. Materials and testing. External insulation. Design and testing.Laboratory classMeasurement of voltage distribution across an insulator string. Measuremets of electrical withstand of air subjected to high voltage of AC, DC and surge type. Methods of measurement of high voltages. Investigation of surge generators. Investigation of oil insulation.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10076S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Real-Time Operating Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10076S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20001">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Signal Processors (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20001</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Student knowledge and skills in Digital signal processor software development and implementation of digital signal processing basic methods used in telecommunication.Overview of a way from project of a digital signal processing method used in telecommunication to the full digital signal processor (DSP) implementation. Digital signal processors: fixed and floating point. DSP architecture and instruction set of selected processor; central processing unit, memory, interrupts, DMA, memory cache, peripherals, power-down modes, controlling of the A/D and D/A converters. Hardware design techniques. Software development using assembler and C, software development tools, IDE, API, software optimization, real time data exchange and analysis, JTAG. Programming tips. DSP implementation of selected methods used in telecommunication systems.Laboratory class: digital signal processor software development. DSP implementation of selected methods used in telecommunication systems. Student projects.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics and telecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20001W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Signal Processors</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20001W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10023">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automotive lighting</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10023</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To familiarize students with automotive lighting. Presentation of design methods of lighting equipment in automotive lighting. Classification and investigation of light fittings used in automotive lighting. Presentation of methods of luminous flux emmision verification in automotive lighting. Examination of the characteristics of road lighting and horizontal and vertical marking.Automotive lighting. Light sources for automotive lighting equipment. Automotive lighting control systems. Headlamps and signal lamps design methods. Photometric measurements of automobile fittings. Construction of daytime running lamps, road lamps, signal lamps and others. Adaptive systems in automotive lighting.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10047S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrumentation and Measurements</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10047S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10058W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer - Based Measurement Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10058W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10081S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power System Stability</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10081S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10057W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modern Control of Mechatronics System</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10057W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10008">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of control engineering</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10008</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Introducing students to structures, tasks and methods of analysis and synthesis of simple control systems. Application of different methods of controlers design for control of simple processes.Lecture: Laplace transforms of commonly encountered time function and basic Laplace transforms. Mathematical modelling of dynamic systems.Transient-response analysis of first and second-order systems. The correlation between transient and frequency-response and s-plane diagram. Stability of linear time-invariant systems. Hurwitz and Nyquist asymptotic stability criteria. Quality parameters of control on the basis of time and frequency domain performance specifications. Process control and the tuning of three-term controllers (analytical and experimental methods). Discrete time and computer control systems. Analytical techniques required for discrete time system analysis. Design methods for discrete time controllers. Nonlinear systems - practical aspects including relaycontrolled systems (PD and PID compensation). Laboratory class: Basic methods of identification, modelling and control of simple plants. Industry PID controllers, configuration and tuning methods. Control of nonlinear systems (with relay).Requirements:mathematics, physicsStudents should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10035">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security and reliability of network systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10035</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Acquiring knowledge of methods and techniques used to provide secure access, transmission and storage of information.Fundamentals of cryptography. Conditions of providing data confidentiality and integrity. Symmetric and asymmetric cipher algorithms e.g. DES, RSA. Hash functions. Digital signatures. Idea of Public Key Infrastructure (PKI). Sources and types of security threats to network systems. Security threats to host and server applications. Security threats to web applications. Methods of protection against selected kinds of threats. Firewall systems, antivirus protection, intrusion detection systems (IDS), idea of honeypots. Methods of authentication and authorization in network systems. Conception of security politics. Examples of complex security politics. Security audit and penetration tests. Systems for data backuping and restoring. Array of disks (RAID). Network storage systems: Storage Area Network (SAN), Network Area Storage (NAS).
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10032">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of telecommunication</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10032</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The aim of the course is to learn basic knowledge in the field of telecommunications, allowing for more effective studying and understanding the specific items they place in all the studies on the direction. The result of the course is to learn the main areas of the discipline, their interrelationships, and the fundamental rights and restrictions associated with the analyzed issues.Elements of communication system, source of information, communication channels, fundamentals of information theory; analog modulation systems (DSB-AM, DSB-SC-AM, SSB-SC-AM, FM) and frequency division multiplexing; noise in analog communication systems especially: physical sources of noise, noise properties of systems, noise in analog modulation systems; discrete signals: sampling theory, pulse code modulation, PCM transmission, line coding, time division multiplexing, digital modulation (ASK, FSK, PSK, DPSK, QAM); noise in digital communication systems: statistical decision theory, distortion in PCM systems, digital modulation in noisy conditions, matched filtering and correlation detection; properties of selected telecommunication systems and technologies.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10043">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embedded systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10043</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To acquaint students with embedded systems and to help them acquire practical skills in the configuration of embedded systems based on Linux.Commercial and technical reasons to use embedded systems. Generic architecture of embedded linux systems. Basic shell commands. Efficient tools to generate embedded Linux systems: crosstool-ng, busybox, buildroot, OpenWRT. Configuring and compiling the kernel. Booting a Linux system. Examples of use of embedded systems.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computerscience. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics andtelecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20008S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photonics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20008S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10074S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Communication Interfaces</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10074S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10038">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workshop on programmable logic devices</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10038</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Use of programmable logic device in real life example. Preparation of technical documentation, tools description and programming methods. Use of hardware description language to synthesise logic device controlling assigned plant. Oral presentation with discussion on individual project.Programmable logic device (PLD) especially field programmed gate array (FPGA) characterisation. Introduction to selected computer-aided design (CAD) tool and hardware description language (HDL). Programming and testing of logic devices based on standard and self-prepared libraries. Automatic control of selected peripheral device. Synthesis of real life example of logic devise based on FPGA modul.Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Experimentalphysik_II__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20002W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-linear and Advanced Control of  Electromechanical Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20002W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10040">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10040</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Teaching a variety of problems related to contemporary digital systems based on microcontrolers and FPGA devices. Student will explain principles of operation of a variety of digital subsystems related to industraial digital systems and design simple digital subsystems.Lecture: Topics address electrical principles, semiconductors and integrated circuits, digital fundamentals, microcomputer systems based on microcontrollers and FPGA devices, serial interfaces for local communication. Laboratory class: Practical exercises in programming and designing digital systems based on microcontrollers, FPGA and softcore processors.
+Requirements:No prerequisites required.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20007S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Compability</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20007S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10036">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Techniques of presentation</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10036</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To receive the skills of preparing a good presentation of a technical subject with the use of Power Point software and abilities to make a poster for a meeting or conference and presenting it in a limit time.Perception about speaker. Examples of bad presentations. The communication process. Presentation model. Delivering the presentation. Designing a conference poster.
+Requirements:
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10068S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D-Modeling and Computer Animation</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10068S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10046">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetism - engineering physics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10046</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To acquaint students with chosen electromagnetic phenomena. To show students mathematical formulation of the electromagnetic field theory, inc. vector calculus. Prestatation of some examples concerning electric, magnetic and current flow fields.Lecture:Principles of vector calculus: vector algebra, vector analysis.Assumptions of electromagnetic field (EM) theory,Electrostatics (Coulomb’s law, electrostatic field). Magnetostatics (Ampère’s law, magnetostatic field). Currents and conductors:current distributions, continuity of current, static electroconductive field, power losses.Electromagnetic potentials. Interface conditions.Maxwell’s macroscopic equations, the energy theorem.Electrodynamics (equation of continuity for electric chargé, displacement current, electromotive force, Faraday’s law of induction).Electromagnetic field: equations, power and the Poynting vector, conditions of continuity, interactions between the EM waves andmaterials. Electric polarisation and displacement, electric multipole moments, magnetisation, energy.Specialization workshop:Solving selected issues related to electrostatic, magnetostatics and current flow problems. The examples are solved using somecomputer applications and numerical methods.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computerscience. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics andtelecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20008">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photonics (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20008</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Acquainting students with the theory of optical phenomena in semiconductors. Teaching the rules of the use of quantum wells in semiconductor emitters and detectors of radiation. Introduction to selected photonics structures and phenomena occurring in them. Teaching the measurement methods of properties of both photonic components and layouts. Presentation of modern trends in development of photonics. Introduction to selected non-linear optical elements.The basics of the optical phenomena theory in semiconductors and optical waveguides. Low dimensional structures - the principle of the use of quantum wells in semiconductor emitters of radiation. Engineering of the prohibited break - super-network. Interfaces in photonic structures. Periodic optical structures - a construction of selected elements, methods of analysis and development perspectives. The construction and selected applications of the matrix of sources and detectors with low-dimensional structures. The phenomenon of optical bistability. Bistable photonic components. Optical logic elements. Nonlinear phenomena.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics and telecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10010">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modern wireless network technologies</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10010</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Student is familiar with the main wireless network standards and distinguishing architectures.Classification of the wireless networks. Wireless Internet protocol. Physical layer. Radiowave propagation. Antennas for wireless networks. Multipath propagation and transmission channel model. Noise and pulse interferences, ISI, radio receiver structure, equalizes. RAKE receivers. Coding and modulation. Space-time Block and trellis coding. Architecture of the GSM, GPRS, EDGE and UMTS. The spread-spectrum technology. Main standards. The OFDM and MIMO Technologies. Hybrid wireless systems.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Geometrie_und_Analysis__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10038S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workshop on Programmable Logic Device</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10038S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10009W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microprocessor Technique and Microcontrollers</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10009W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Lecture:Binary arithmetic. Basic topics of the microprocessor engineering. Microprocessor system structures and main components: processors, memories, basic peripheral devices, standard buses, additional circuits. Interrupt systems. Methods of input/output device service. Input/output binary and analogue devices. Exemplary microcontroller family: standard structure, instruction list, peripherals, interrupts, extensions.Laboratory classes:Practical exercises in programming of basic algorithms and I/O device service in machine- and high-level language.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Physik_und_Sensorik__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10070S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visualization on Industrial Processes</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10070S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10064W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intelligent Technical Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10064W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20006S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antennas and Propagation</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20006S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10032S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamental of Telecommunication</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10032S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10020W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microcontrollers in Applications</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10020W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10050">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatics in Telecommunication</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10050</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To familiarize students with the basic principles of system operation control, tracking and synchronization in telecommunications systems and methods of their implementationThe mathematical methods of the description of the automation systems. The structure of the systems, transfer function, the conditions of stability and accuracy. Correlational analysis of automation systems in the presence of the noise . Discrete systems. Non-linear systems. Kalman Filters. Synchronization in digital telecommunications systems, phase locked Loop the Costas, loop. Synchronization in telecommunication networks.
+Requirements:Circuits and signals, Principles of telecommunication.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10052W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optoelectronics-Sources and Detectors of Optical Radiation</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10052W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10015">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programmable logic controllers</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10015</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course will provide the basic technical skills and knowledge necessary to work with electrical control systems typically found in an industrial environment.Industrial control systems. Programmable Logic Controllers (PLC): classification, structure, selection, configuration. PLC programming languages. Input/Output devices (switches, sensors, relays, solenoids etc.). PLC communication with I/O devices. Sequential Control Structure. Industrial networks - Profibus and Profinet. Visualization of industrial processes - Supervisory Control and Data Acquisition (SCADA) Systems. Human–machine interface (HMI). PLC programming software. HMI software.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10019">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wireless transmission systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10019</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Understanding of design of radio channels with different frequency band, understanding of mathematical bases and design of multiport radio complexes and different wireless transmission systems.Radio channels with different frequency band. Radio wave propagation in free space. Equation of radiocommunication. Propagation of earth waves, troposphere radio links. Propagation of ionosphere waves, of long and medium waves. Propagation of HF and UHF waves. Microwave propagation models (Lee, Okumura, Hata, COST – Hata, Walfish, NLOS1-2, LOS).Mathematical foundations of design of multiport radio complexes. Properties of complex matrices, eigenvalues and eigenvectors. Scattering matrix of multiport network. Maximization of input power of multiport network, Rayleigh ratio. Cascade connection of the multiports. Power parameters of broadband transmit-receive complexes. Multiport transmit-receive complexes WTS. Base elements of the transmit-receive complexes. Transmit multiport radio complexes. Receive adaptive antenna arrays, smart antenna arrays. Examples of WTS. Wireless communication systems (paging systems, wireless telephony, trunking systems, and cell telephony systems, UMTS). Satellite radiocommunication systems (satellite radio link, types of orbits, systems INMARSAT, GLOBALSTAR).Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10071S">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Electrical Problem Oriented Programming</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10071S</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20003W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Optical Fibres 2</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20003W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10053W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object - Oriented Programming</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10053W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10024W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10024W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10030">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronics 2</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10030</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The objective of this course is to provide students with deep understanding of advanced analog circuits. The laboratory component of the course provides students with an opportunity to design, simulate and test various circuits discussed in class.Frequency response of single transistor amplifiers. Linear applications of operational amplifiers. Nonlinear applications of operational mplifiers. Voltage comparators. Current sources. Active filters. Output stages and power amplifiers. Voltage regulators. RC oscillators. Optoelectronic devices and circuits. Several lab and homework assignments in this class will require the use of PSpice software.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Neurokognition_I__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10021">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Final project</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10021</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Familiriazing student with the methodology of solving engineer problems. Deepening skills of appropriate choice and use of literature references and the skill of use of scientic and technical data bases. Training the ability of analyzing the literature to identify the possible solutions of the problem stated in the engineer project. Obtaining the skill of formulating the engineer problem and the choice of the methodology and tools to solve it (including calculation tools and computer programmes). Achieving the skill of preparing plan and schedule of the process of the engineer task realization. Improving skill of preparing the report of the engineer task realization. Creating the skill of the design assumptions' veryfication, concluding and evaluation of achieved results.Knowledge and skills connected with the subject of the project - aquisition of information form the literature. Characterization of the possible solutions of the problem stated in the engineer project derived from the current state of knowledge. Knowledge of the development trends within the chosen area allowing to choose the solution of the problem. Planning the realization of the engineer problem. Using computer tools and techniques in order to realize or support the solution of the task. Veryfication of the solution by means of the methods and tools of theoretical and experimental analysis. Methodology of characterization and analyzing the engineer task and forming the conclusions. Development of the results and the documentation of executed tasks.
+(Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science).
+Requirements:
+STUDENT ACCEPTED INDIVIDUALLY.       
+BEFORE adding this module to the learning agreement student is obliged to contact with the faculty coordinator (we.erasmus@pb.edu.pl) 
+ 
+STUDENT IS OBLIGED TO STUDY IN BIALYSTOK UNIVERSITY OF TECHNOLOGY THE WHOLE ACADEMIC YEAR.
+5 or6 semesters passed at the engineer level
+
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10068W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Power Systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10068W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10017">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioelectronic devices</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10017</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The principal objective of lectures is to cover the fundamentals of main radioelectronics circuits (amplifiers, oscillators, frequency multipliers, mixers) and analogue modulation (AM,FM,PM modulations, modulators and demodulators structures). The basis of superheterodyne receivers are presented.Static and dynamic characteristics. Approximation characteristics of active elements. Classes and regimes of work. Analysis of work of resonance power amplifier. Frequency multipliers. LC and crystal oscillators. Amplitude modulation. AM modulators and demodulators. Angle modulations - FM and PM. FM modulators and demodulators. Frequency mixers. Superheterodyne receiver idea.Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Geometrie_und_Analysis__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10037">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telecommunication devices</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10037</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The principal objective of lectures is to cover the fundamentals digital television and radio systems and radiotransmitter structures.Structures and technical parameters of radiotransmitters and receivers. Automated gain control and automated frequency control. Frequency synthesizers. Microwave oscillators, microwave tubes, magnetrons and klystrons. Principles of digital communication systems. Channels multiplexing methods: FDMA, TDMA, CDMA.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10022W">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image Processing and Recognition</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10022W</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course has not yet been described...
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20005">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wireless broadcasting systems (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20005</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The principal objective of lectures is to cover the fundamentals digital television and radio systems and radiotransmitter structures.International organizations for radiocommunication: ITU, Radiocommunication Rule, elements of radiocommunication law. Structure of radiotransmitter. Digital television - DVB standard. Digital radio - DAB and DRM standards. Digital television in Europe. European standards for radio and television devices. Measurement of selected blocks of transmitter-receiver devices. Antennas and antenna arrays of transmitter systems and its parameters.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics and telecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10048">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to Programming in C</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10048</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Developing the skills of computer algorithms designing and implementing them in the form of programs in C language.Structured programming in C language: data types, variables and constants, expressions and statements, operators, precedence of operators, formatted input/output, conditional statements, loops, arrays, pointers and dynamic memory allocation, structures, unions and bit fields, text and binary files, functions, passing argument to functions.
+Requirements:
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Computergraphik_I__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10011">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network technologies</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10011</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Obtaining knowledge of contemporary networking technologies and protocols used in local and backbone computer networks. Acquiring practical skills in setting up data transmission networks and configuring typical network devices.The history of development of Internet network. General foundations of computer networks architecture. Classification of networks and their basic topologies. Examples of network resources. Layered models of cooperating between network devices. The Open Systems Interconnection Reference Model (OSI). Network equipment: hubs, switches, routers, modems, gateways etc. Main and auxiliary network protocols: IP, TCP, UDP, ICMP, ARP, DHCP, DNS and other. Technologies and architectures of wired and wireless Local Area Networks (LAN): Ethernet, Fast Ethernet, Gigabit Ethernet, Wi-Fi. Selected wide area (WAN) and metropolitan area (MAN) network technologies. Static and dynamic IP routing. Interior and exterior dynamic routing protocols: e.g. RIP, OSPF, BGP. Internet architecture. Interconnecting LAN and WAN networks. Access and backbone networks. Domain name system (DNS).
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Simulation_naturwissenschaftlicher_Prozesse__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10004">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical circuits 1</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10004</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To receive the abilities to perform a simple analysis of linear DC and AC circuits contain up to two sources. To use complex numbers to calculate currents, voltages and power. Received results have to be properly interpreted and verified. Student discuss problems by using good terminology.Element Constrains. Current and equivalent voltage on basic elements. Basic circuit analysis. NodeVoltage and Loop-Current Analysis. Thevenin equivalent circuits. Power of load and source. Analysis of resistive circuits with OA. Sinusoids and phasors. Phasor diagrams for simple circuits. Circuits analysis with phasors. Energy and power. Compensation of reactive power. The frequency analysis of RL, RC and RLC circuits. Simulation software for choosen applications. Interpretation of results.Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10024">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Control engineering and systems</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10024</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This course extends the students' knowledge of state space approach to analyze and synthesis of control systems. Workshops will learn how to design and simulate considered systems in specialized software.Description of multivariable dynamical systems in state space and by the use of transfer matrix.Controlability and observability of linear systems, Kalman decomposition. Modal control, observer synthesis, use of observer to modal control. Linear matrix inequalities. Computer aided design and simulations of control systems.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10006">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronics 1</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10006</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Description of the assumed knowledge, skills and social competence the student should have acquired after the completion of the module:a) to provide students with basic knowledge of electronic devices;b) to develop skills in analysis, design and testing of electronic circuits containing diodes, transistors and operational amplifiers.Diodes - parameters, I-V characteristics, DC and AC models. Simple circuits containing diodes. Transistors (BJT, FET and MOSFET) - principles of operation, I-V characteristics, equivalent circuits. Transistor biasing. Single stage transistor amplifiers. Small signal analysis of amplifiers. Transistor as a switch. Parameters of operational amplifiers. Ideal OpAmp. Basic applications of operational amplifiers. Analysis and design of electronic devices and circuits using PSPICE.
+Requirements:linear circuit analysis (Thevenin's theorem, superposition, loop and nodal analysis)Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Simulation_naturwissenschaftlicher_Prozesse__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20012">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical methods in electrical engineering: selected issues</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20012</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+To acquaint students with chosen numerical methods of solving electrical problems (i.e. electric circuits, electromagnetic phenomena), particularly with algorithms and available applications for the solution of differential equations which correspond to steady state and transient behaviour. To show students how to:(a) use and implement some of the methods to solve problems connected with electrical engineering;(b) use some mathematical and specialized software;(c) assess reliability of numerical results;(d) validate and interpret results of implemented algorithms.Lecture: Mathematical modelling and computer aided solution of EE problems: the aims and classification of the methods. Taylor’s series and its interpretation, Taylor’s theorem for functions of many variables. Differential approximation of linear and vector operators used in electrical problems. The formulation and properties of the finite difference method (incl. finite difference time domain method). Finite element method.Principles of distributed processing. Paradigms of multi-processing. Coefficients of performance, Amdahl’s law, Gustaffson’s law, the properties and implementation of distributed processing libraries.Specialization workshop: Numerical analysis of chosen circuit and field problems related to electrical engineering with the use of the finite difference and finite element methods. Declaration of boundary conditions, analysis of chosen open boundary problems.Analysis and validation of results.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computerscience. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics andtelecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE20003">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Optical Fibers 2 (MASTER)</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-20003</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Practical familiarize students with contemporary types of special optical fibers for telecommunications and not to telecommunications applications. Measurement parameters for the construction of active fiber amplifiers, fiber lasers and broadband sources. Measurements of optical parameters and physical fiber: birefringent, photonics, nonlinear, capillary. Synthesis of active materials used in the manufacture of vitreous fiber. Embodiments of the optical fiber doped with few lanthanides.The characteristics of special optical fibers in telecommunication and not to telecommunications applications. Methods of measurement parameters for the construction of active amplifiers fiber, lasers fiber and broadband sources. Characteristics of birefringent optical, photonic, nonlinear, capillary fibers. The types and conditions for synthesis of materials used to make optical fibers. Construction of the advanced systems of optical fibers doped with few lanthanides.
+Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics and telecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10013">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power electronics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10013</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Description:The acquaint with basic power electronics devices and different types of converters (DC/DC, AC/DC, DC/AC, AC/AC 1- and 3-phases) and its control. The acquire of skills to different types converter operation analyze.Power semiconductor devices (SCR, BJT, MOSFET, IGBT). Single and three phases controlledrectifiers with different type of load. The rectifier influence on the net, active, reactive and distortionpowers. The DC/AC and AC/DC converters - structures and control. The transistors matrix convertercontrolled by PWM methods. 2- and 4-quadrant DC-DC converters. Vectorial model of 3-phasesconverter.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Computational_Science_I__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10044">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project of electrical installations in industrial building</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10044</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Teaching how to solve an engineering project task by means of the information obtained from literature, databases and other sources.Complete with module content:Rules and statutory regulations, Installed power loads – Characteristics, LV architecture selection guide, Lighting installations, Sizing and protection of conductors, Protection against electric shocks, LV switchgear: functions &amp; selection, Overvoltage protection, Reactive energy
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10045">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computational electromagnetics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10045</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Description of widely used CAD methods for engineering problems dealing with the electromagnetic field: finite element method and finite difference method. Applications of these methods to electromagnetic issues (static models, low and high frequency).Lecture:Partial differencial equations: classification, method of solution.Physical model vs. mathematical model. Analytical solution vs. simulation. Modeling and Simulation Cycle, modeling methodology.1D, 2D, 3D modeling. Time domain vs. time harmonic analysis. Narrowband vs. wideband analysis. 2D Mixed-Mode Modeling. Explicitvs. implicite methods.Models of materials in computational electromagnetics.Finite element method: weak form, classification of the elements, test functions. Local and global formulation.Declaration and physical interpretation of the boundary conditions. Perfectly Matched Layer conditions.Methods of adaptive meshing. Parametrization of the models. Coupled analysis of the phenomena.Finite difference calculus: differentia quotiens, differencing, discretization of the domain, spatial difference operators, implicit formulas.Specialization workshop:Solution and analysis of some EM phenomena issues using FEM and FDM methods. The specialized software will be implemented.Requirements:Students are expected to have knowledge in the field of mathematics, physics, circuit theory, digital and analog electronics, fundamentals of computerscience. The general requirement is that student finished studies on the bachelor's level in the area of electrical engineering, electronics andtelecommunication or related. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10001">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basics of photonics</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10001</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+Acquainting students with the main theme of photonics research (metrology devices and systems, sensors and photonic technologies). Identification of areas of photonics applications including respectively: optical fiber technology, laser technology, optical and fiber-optic telecommunication, semiconductor optoelectronics, integrated optoelectronics. Overview of selected problems of photonics: geometrical and wave optics, propagation of the electromagnetic wave in free space and the dispersion medium. Acquainted with the elements of nonlinear optics. Teaching the principles of operation and measurement of the elements of photonic systems: cylindrical and planar optical fibers, elements of optical fiber network, optical modulators. Acquainted with the materials and microelectronic technologies. Overview of contemporary directions in the field of photonics. The basics of the optical phenomena theory in semiconductors and optical waveguides. Low dimensional structures - the principle of the use of quantum wells in semiconductor emitters of radiation. Engineering of the photonic bang gap - super-network. Interfaces in photonic structures. Periodic optical structures - a construction of selected elements, methods of analysis and development perspectives. The construction and selected applications of the matrix of sources and detectors with low-dimensional structures. The phenomenon of optical bistability. Bistable photonic components. Optical logic elements. Nonlinear phenomena.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Stochastik__"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#ISFEE10031">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Field programmable gate arrays</ns1:hasName>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IS-FEE-10031</ns1:hasModuleNumber>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The target of this course is to introduce the students to the structural design of FPGAs in the way, which is appropriate for both programmers and hardware engineers.CAD software for designing FPGAs. Altera Quartus II software. Xilinx ISE software. Design flow of FPGAs. VHDL: fundamental units, library declarations, entity, architecture. Concurrent code. Sequential code. State machines. Packages and components. Functions and procedures. IEEE standard packages. Techniques description of the project, simulation, implementation and programming of FPGAs. Constructing a digital circuit using FPGAs. Synthesis of complex hierarchical designs. Synthesis of digital systems using standard prototype modules.
+Requirements:Students should have basic knowledge in the field of mathematics, electrical physics, circuit theory, digital and analog electronics, fundamentals of computer science. The general requirement is that student has studied engineering for at least 2 years. In some cases prerequisites are defined.
+</ns1:hasContent>
+    <ns1:hasCreditPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</ns1:hasCreditPoints>
+    <ns2:hasCourse rdf:resource="http://tuc/course#Electrical"/>
+    <ns3:hasUniversity rdf:resource="http://across/university#BU"/>
+    <ns1:hasModules rdf:resource="http://tuc.web.engineering/module#_Numerische_Dynamik_thermomechanisch_-gekoppelter_Strukturen__"/>
+  </rdf:Description>
+</rdf:RDF>

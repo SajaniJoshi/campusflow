@@ -1,0 +1,32 @@
+.avatar-emoji {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.avatar-emoji svg {
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.logout-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.logout-icon svg {
+    width: 100%;
+    height: auto;
+    color: #fff;
+}

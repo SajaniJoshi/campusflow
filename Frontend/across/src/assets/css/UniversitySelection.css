@@ -1,0 +1,63 @@
+.universitySelection {
+  background-color: #bcd8c1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.universitySelection__wrapper {
+  width: 70%;
+  gap: 2.5rem;
+  padding: 40px 0 33px 0;
+  border-radius: 25px;
+  -webkit-box-shadow: 7px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 7px 7px 4px 0px rgba(0, 0, 0, 0.25);
+  border-bottom: 3px solid #fbfbfb;
+  border-right: 3px solid #fbfbfb;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.universitySelection__title {
+  font-size: calc(1.125rem + 0.7vw);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 2rem !important;
+}
+
+.universitySelection__select {
+  display: block;
+  width: 380px;
+  padding: 8px 0;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #8f8f8f;
+  border-bottom: 1px solid #8F8F8F;
+  background: transparent;
+  margin: 10px 0;
+}
+
+.universitySelection__button {
+  display: block;
+  width: 380px;
+  height: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  border: none;
+  margin-bottom: 58px;
+}

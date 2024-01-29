@@ -1,0 +1,13 @@
+#usersTransferHeading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.users__transferCredits h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}

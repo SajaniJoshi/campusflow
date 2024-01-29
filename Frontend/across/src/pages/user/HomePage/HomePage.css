@@ -1,0 +1,133 @@
+.app__features {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.app__features h2 {
+  border-bottom: 2px solid lightgray;
+  font-size: calc(1.25rem + 0.5vw);
+}
+
+.app__features h4 {
+  padding: 10px 0;
+  font-size: calc(1rem + 0.3vw);
+}
+
+.highlighted__features {
+  list-style-type: disc;
+  font-size: 0.9rem;
+  padding-left: 40px;
+}
+
+.homePage__quick__links {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.homePage__quick__links h2 {
+  border-bottom: 2px solid lightgray;
+  font-size: calc(1.25rem + 0.5vw);
+}
+
+.quicklinksWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 10px;
+}
+
+.quicklinks {
+  width: inherit;
+  display: flex;
+}
+
+.quicklink {
+  width: 22%;
+  height: 200px;
+  padding: 3rem;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.quicklink {
+  text-decoration: none;
+  color: #000;
+}
+
+.quicklink:nth-of-type(2n) {
+  background: rgba(187, 213, 207, 1);
+}
+
+.quicklink:nth-of-type(2n + 1) {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.quicklink h4 {
+  padding-bottom: 12px;
+  font-size: calc(1rem + 0.3vw);
+  text-align: center;
+}
+
+.quicklink p {
+  text-align: center;
+  font-size: calc(0.875rem + 0.1vw);
+}
+
+.homePage__notifications {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.homePage__notifications>h2 {
+  font-size: calc(1.25rem + 0.5vw);
+}
+
+.homePage__notifications>h4 {
+  font-size: calc(1rem + 0.3vw);
+  border-top: 2px solid lightgray;
+  padding: 12px 0;
+}
+
+.homePage__notifications>p {
+  font-size: calc(0.875rem + 0.1vw);
+}
+
+.notification__button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.75rem;
+  background: #bcd8c1;
+  color: rgba(0, 0, 0, 1);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 841px) and (max-width: 1229px) {
+  .quicklinksWrapper {
+    gap: 2rem
+  }
+
+  .quicklink {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .quicklink {
+    width: 100%;
+  }
+}

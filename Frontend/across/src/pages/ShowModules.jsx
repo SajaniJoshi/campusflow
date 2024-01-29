@@ -13,16 +13,19 @@ const ShowModules = () => {
   }, []);
 
   return (
-    <div style={{ flex: 1 }}>
+    <div className="showModules" style={{ flex: 1 }}>
       <p id="moduleHeading">Web Engineering Modules</p>
-      {data_static?.map((item) => {
+      {data_static?.map(item => {
         return (
           <div id="module" key={item.moduleId}>
-            <div id="moduleid">{item.moduleId} - {item.moduleName}</div>
+            <div id="moduleid">
+              {item.moduleId} - {item.moduleName}
+            </div>
             <div id="dept">Department of {item.deptName}</div>
-            <div id="creditPoints">Credit Points : {item.moduleCreditPoints}</div>
+            <div id="creditPoints">
+              Credit Points : {item.moduleCreditPoints}
+            </div>
             <div>{item.moduleContent}</div>
-           
           </div>
         );
       })}

@@ -1,0 +1,73 @@
+.file-upload-container {
+    margin: 20px;
+}
+
+.dropzone {
+    border: 2px dashed #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropzone.active {
+    background-color: #f5f5f5;
+}
+
+.upload-info {
+    margin-top: 20px;
+}
+
+.upload-status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #4CAF50;
+}
+
+.upload-status p {
+    margin-left: 10px;
+}
+
+.start-button {
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.start-button-parent {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.instructions {
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.instructions-font {
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+.instructions-font-subtext {
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 20px;
+}

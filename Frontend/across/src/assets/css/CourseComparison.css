@@ -1,20 +1,29 @@
 .courseComparison {
-  width: 100%;
-  padding-bottom: 50px;
-  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 50px;
+  
+background: #007991;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
 }
 
 .courseComparison__image{
-  width: inherit;
-  padding: 20px;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+
 }
 
 .courseComparison__contents {
-  width: 25%;
+  width: 40%;
+  padding: 20px 0 0 20px;
   text-align: left;
-  position: absolute;
-  top: 20%;
-  left: 5%;
+  color: #fff;
 }
 
 .courseComparison__contents .courseComparison__title, .courseComparison__contents .courseComparison__description {
@@ -31,9 +40,71 @@
   color: #000;
   font-weight: 600;
   font-size: 1rem;
-  border-radius: 15px 0;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .courseComparison__button:hover {
-  filter: drop-shadow(0 0 30px #e9d985);
+  filter: drop-shadow(0 0 20px #e9d985);
 }
+
+
+@media screen and (max-width: 480px) {
+  .courseComparison {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .courseComparison__image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+   
+  }
+
+  .courseComparison__contents {
+    width: 100%;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .courseComparison__contents .courseComparison__title, .courseComparison__contents .courseComparison__description {
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+
+  .courseComparison__contents .courseComparison__title {
+    font-size: 1rem;
+  }
+
+  .courseComparison__contents .courseComparison__description {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 979px) {
+    .courseComparison {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .courseComparison__image{
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+     
+    }
+  
+    .courseComparison__contents {
+      width: 100%;
+      padding: 0;
+      padding-top: 1rem;
+    }
+  
+    .courseComparison__contents .courseComparison__title, .courseComparison__contents .courseComparison__description {
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+  }

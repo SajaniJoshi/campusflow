@@ -1,0 +1,5 @@
+.services > h1 {
+  margin: 10px 0;
+  font-size: calc(1.225rem + 0.8vw);
+  text-align: center;
+}

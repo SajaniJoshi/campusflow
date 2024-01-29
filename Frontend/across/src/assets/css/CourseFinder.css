@@ -1,22 +1,28 @@
 .courseFinder {
-  width: 100%;
-  padding-bottom: 50px;
-  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 50px;
+  background: #323f64;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
 }
 
 .courseFinder__image{
-  width: inherit;
+  width: 50%;
   height: auto;
-  padding: 20px;
-  display: block;
+  object-fit: contain;
+ 
 }
 
 .courseFinder__details {
-  width: 20%;
+  width: 40%;
+  padding: 20px 0 0 20px;
   text-align: left;
-  position: absolute;
-  top: 20%;
-  right: 5%;
+  color: #fff;
 }
 
 .courseFinder__details .courseFinder__title, .courseFinder__details .courseFinder__description {
@@ -33,9 +39,71 @@
   color: #000;
   font-weight: 600;
   font-size: 1rem;
-  border-radius: 15px 0;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .courseFinder__button:hover {
   filter: drop-shadow(0 0 30px #439a86);
+}
+
+
+@media screen and (max-width: 480px) {
+  .courseFinder {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .courseFinder__image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+   
+  }
+
+  .courseFinder__details {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  .courseFinder__details .courseFinder__title, .courseFinder__details .courseFinder__description {
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+
+  .courseFinder__details .courseFinder__title {
+    font-size: 1rem;
+  }
+
+  .courseFinder__details .courseFinder__description {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 979px) {
+  .courseFinder {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .courseFinder__image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+   
+  }
+
+  .courseFinder__details {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  .courseFinder__details .courseFinder__title, .courseFinder__details .courseFinder__description {
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
 }

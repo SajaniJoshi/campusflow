@@ -1,0 +1,29 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.mainlayout__content {
+  padding-top: 55px;
+  padding-left: 210px;
+  padding-right: 2rem;
+  min-height: 95%;
+
+}
+
+.mainlayout__footer {
+  padding-left: 180px;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 515px) {
+  .mainlayout__content {
+    padding-left: 100px;
+  }
+
+  .mainlayout__footer {
+    padding-left: 70px;
+  }
+}
