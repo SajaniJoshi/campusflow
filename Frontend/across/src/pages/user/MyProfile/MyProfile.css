@@ -89,11 +89,13 @@ th {
   text-align: center !important;
   padding: 10px;
 
+
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+td {
+  color: #fff;
 }
+
 
 .tdTrashIcon>svg {
   font-size: 1rem;
@@ -140,6 +142,8 @@ tr:nth-child(even) {
   color: #fff;
   background-color: var(--primary-color);
 }
+
+
 
 @media screen and (max-width: 1215px) {
   .myProfile__contents {

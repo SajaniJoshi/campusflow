@@ -1,92 +1,162 @@
-# Web Wizards
+# CampusFlow
+
+CampusFlow is a student and administration management web-based system built for "Across" universities. It consists of an admin panel and a student dashboard.
+
+## Technology Stack
+- React JS - Frontend
+- Django - Backend
+- Blazegraph - Graph-based data storage for RDF
+- Mysql - Database
+
+## System Requirements
+- Operating System
+  - Windows
+  - MacOS
+  - Linux
+
+- Software Requirements
+  - [Mysql](https://dev.mysql.com/downloads/installer/)
+  - [Blazegraph](https://github.com/blazegraph/blazegraph-python) 
+  - [Python >= 3](https://www.python.org/downloads/)
+  - [Nodejs >= 16](https://nodejs.org/en/download)
+  - [Java >= 8](https://www.oracle.com/java/technologies/downloads/)
+
+- Deployment Requirements
+  - AWS RDS - For Mysql
+  - AWS EC2 - For backend
+  - AWS EC2 - For Blazegraph
+  - AWS S3 - For frontend
+  - Docker 
+
+**Note:** Please use appropriate installation guides provided by the software providers based on your OS requirements
+
+## API Documentation
+
+***Note: accessible till 20/March/2024** Postman Api documentation can be access through this [LINK](https://documenter.getpostman.com/view/31802738/2sA2xb7vjD)
 
 
+# Installation
 
-## Getting started
+### MySQL
+We recommend using [mysqlworkbench](https://www.mysql.com/products/workbench/) to run the MySQL server locally
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Once your MySQL server runs successfully, create an " across " database.
+Make sure to update the settings.py with your MySQL configurations inside "DATABASES".
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### Backend
 
-## Add your files
+Use the package manager pip or pip3 to run the backend. pip is usually part of python installation but in case you can't find pip command use this [link](https://pip.pypa.io/en/stable/)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
+Go to the folder Backend -> across and run the below commands
+```bash
+python3 -m pip install Django
 ```
-cd existing_repo
-git remote add origin https://gitlab.hrz.tu-chemnitz.de/vsr/edu/planspiel/WS2324/web-wizards.git
-git branch -M main
-git push -uf origin main
+```bash
+python3 -m pip install -r requirements.txt
+```
+```bash
+python3 manage.py makemigrations
+```
+```bash
+python3 manage.py migrate
+```
+```bash
+python3 manage.py runserver
+```
+**Note:** Please replace python3 with python incase python3 doesn't work on your system
+
+_Hit the this URL on your browser to access the backend [LINK](http://127.0.0.1:8000/)_
+
+
+### Frontend
+
+Use the package manager npm to run the frontend. npm is part of NodeJS installation so you don't need to install it separately
+
+
+Go to the folder Frontend -> across and run the below commands
+```bash
+npm install --force
+```
+```bash
+npm run dev
+```
+_Hit this URL on your browser to access the webpage [LINK](http://localhost:5173/)_
+
+
+### Blazegraph
+
+Install the Blazegraph jar file from this [link](https://github.com/blazegraph/database/wiki/Quick_Start)
+
+Go to the folder Blazegraph copy the installed jar and then run the following commands
+```bash
+java -server -Xmx4g -jar blazegraph.jar
 ```
 
-## Integrate with your tools
+_Hit this URL on your browser to access the blazegraph [LINK](http://localhost:9999/blazegraph/)_
 
-- [ ] [Set up project integrations](https://gitlab.hrz.tu-chemnitz.de/vsr/edu/planspiel/WS2324/web-wizards/-/settings/integrations)
+***Note: accessible till 20/March/2024** In order head start with data you can upload some of the RDF files available at the [LINK](https://drive.google.com/drive/folders/1MjLmdYIQXa9I-gnUay1zUhH3CfGY0c_d?usp=sharing) to the blazegraph
 
-## Collaborate with your team
+## Deployment (Optional)
+**Create and AWS account and run EC2 instances and S3 bucket before moving on the deployment**
+**and also Install Docker on your machine [LINK](https://www.docker.com/)**
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-## Test and Deploy
+### Blazegraph
+Create an image for linux based machine using the Dockerfile available in the Blazegraph folder
+```bash
+docker build -t blazegraph . --platform linux/amd64
+```
+Tag the image
+```bash
+docker tag across-server acrosswebwizards/blazegraph:latest 
+```
+Push the image to dockerhub
+```bash
+docker push acrosswebwizards/blazegraph:latest   
+```
+Pull the image to your running EC2 instance
+```bash
+docker pull acrosswebwizards/blazegraph:latest   
+```
 
-Use the built-in continuous integration in GitLab.
+Run the image using the following command on your EC2
+```bash
+docker run -d -p 80:9999 blazegraph
+```
+**Note: Please update the above commands accordingly as per your docker hub account name, you can also use any other deployment platforms for deployment**
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### Backend
+Create an image for linux based machine using the Dockerfile available in the across folder
+```bash
+docker build -t across-server . --platform linux/amd64
+```
+Tag the image
+```bash
+docker tag across-server acrosswebwizards/across-server:latest 
+```
+Push the image to dockerhub
+```bash
+docker push acrosswebwizards/across-server:latest   
+```
+Pull the image to your running EC2 instance
+```bash
+docker pull acrosswebwizards/across-server:latest   
+```
 
-***
+Run the image using the following command on your EC2
+```bash
+docker run -d -p 80:9999 across-server
+```
+**Note: Please update the above commands accordingly as per your docker hub account name, you can also use any other deployment platforms for deployment**
 
-# Editing this README
+### Frontend
+Configure AWS S3 bucket for static hosting
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+```bash
+npm run build
+```
+Push to S3
+```bash
+aws s3 sync dist/ s3://[yourbucketname] 
+```

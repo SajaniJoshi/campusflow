@@ -9,20 +9,67 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST, require_http_methods, require_GET
 from django.core.files.storage import FileSystemStorage
 from .universitiy_list import get_all_universities
+from transfer_credits.models import TransferCredits
 from .add_module import add_module_in_blaze
 from django.http import HttpResponse
 from user.models import UserProfile, UserData
 from csv_to_rdf.csvTordf import University,CsvToRDF, UpdateModules, InsertModules
 from rdflib import Graph, Literal, Namespace, RDF, URIRef
 from rdflib.namespace import XSD
+from transfer_credits.views import send_generated_pdf_on_email
 import requests
 import uuid
+from django.utils import timezone
+
+EMAIL_BODY_APPROVED = """Hi {0}, 
+
+Please find attached your transfer credit requests PDF. Your request has been approved.
+
+Best regards,
+CampusFlow Team"""
+
+PDF_BODY_APPROVED = """Dear {0},
+
+Your credit transfer request has been approved. Below is the list of transfer credit requests you made,
+
+"""
+
+SUBJECT_SUCCESSFUL = """Approved Credit Transfer"""
+
+EMAIL_BODY_REJECTED = """Hi {0}, 
+
+Please find attached your transfer credit requests PDF. Your request has been declined.
+
+Best regards,
+CampusFlow Team"""
+
+PDF_BODY_REJECTED = """Dear {0},
+
+Your credit transfer request has been declined. Below is the list of transfer credit requests you made,
+
+"""
+
+SUBJECT = """Credit Transfer"""
+
+EMAIL_BODY = """Hi {0}, 
+
+Please find attached your transfer credit requests PDF.
+
+Best regards,
+CampusFlow Team"""
+
+PDF_BODY = """Dear {0},
+
+Below is the list of transfer credit requests you made,
+
+"""
+
+SUBJECT_REJECTED = """Declined Credit Transfer"""
 
 uploadLoaction =""
-def saveFiles(request):
-    uploaded_files = request.FILES.getlist('files')
+def saveFiles(uploaded_files):
     # Specify the directory where you want to save the files
-    upload_directory = 'uploads/'
+    upload_directory = 'Backend/across/uploads/'
 
     # Create a FileSystemStorage instance with the upload directory
     fs = FileSystemStorage(location=upload_directory)
@@ -62,8 +109,6 @@ def csv_rdf(request):
                 return JsonResponse({'message': 'csv Files successfully converted to RDF file'}, status=200)
     except Exception as e:
             return JsonResponse({'message': f'Error converting csv to RDF file: {str(e)}'}, status=500)
-
-
 
 @csrf_exempt
 @require_POST
@@ -127,7 +172,7 @@ def insert_module(request):
         existing_user_profile = UserProfile.objects.filter(email=email).first()
         if existing_user_profile:
             if existing_user_profile.role == 'ADMIN':
-                server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+                server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
 
                 qresponse = server.query(get_university_uri_by_university_name(university_name))
                 data_for_university_uri = qresponse['results']['bindings'] 
@@ -153,7 +198,7 @@ def insert_module(request):
                     try:
                         payload = {'update': add_individual_module_by_admin(module_uuid_str, module_name, module_number, module_content, module_credit_points, university_uri, course_uri)}
         
-                        result = requests.post("http://3.85.134.206/blazegraph/namespace/kb/sparql", data=payload)
+                        result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=payload)
 
                         # Check the response status
                         if result.status_code == 200:
@@ -201,7 +246,7 @@ def delete_module(request):
         if existing_user_profile:
             if existing_user_profile.role == 'ADMIN':
                 try:
-                    server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+                    server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
                     qresponse = server.query(is_module_already_present_by_module_uri(module_uri))
                 
                     # Module already exists, return a message
@@ -214,7 +259,7 @@ def delete_module(request):
 
                     payload = {'update': delete_individual_module(module_uri)}
 
-                    result = requests.post("http://3.85.134.206/blazegraph/namespace/kb/sparql", data=payload)
+                    result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=payload)
 
                     # Check the response status
                     if result.status_code == 200:
@@ -267,7 +312,7 @@ def update_module(request):
         existing_user_profile = UserProfile.objects.filter(email=email).first()
         if existing_user_profile:
             if existing_user_profile.role == 'ADMIN':
-                server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+                server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
 
                 qresponse = server.query(is_module_already_present_by_module_uri(module_uri))
             
@@ -292,7 +337,7 @@ def update_module(request):
                 try:
                     payload = {'update': update_individual_module_by_admin(module_uri, updated_module_name, updated_module_number, updated_module_content, updated_module_credit_points, university_uri, course_uri)}
 
-                    result = requests.post("http://3.85.134.206/blazegraph/namespace/kb/sparql", data=payload)
+                    result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=payload)
 
                     # Check the response status
                     if result.status_code == 200:
@@ -328,24 +373,36 @@ def update_module(request):
 @require_POST
 def fetch_transfer_credit_requests(request):
     data = json.loads(request.body.decode('utf-8'))
-    
+
     # Extract data fields
     email=data.get('email', '').strip()
 
     try:
-        user_data = UserData.objects.get(email=email)        
-        
-        if user_data is not None and user_data.transfer_credits_requests is not None:
-            response_data = {
-                    'message': "Transfer Credit Requests exists",
-                    'transfer_credit_requests': user_data.transfer_credits_requests
-            }
-            return JsonResponse(response_data, status =200)
-        else:
-            response_data = {
-                "message": "Transfer Credit Requests not exists for this user"
-            }
-            return JsonResponse(response_data, status =404)
+        list_of_transfer_credits = TransferCredits.objects.filter(email=email)
+        transfer_credits_requests = []
+
+        # Check if any objects are returned
+        if list_of_transfer_credits.exists():
+            # Access the objects in the queryset
+            for transfer_credit in list_of_transfer_credits:
+                transfer_credit_data = {
+                    "fromModules": transfer_credit.fromModules,
+                    "toModules": transfer_credit.toModules,
+                    "created_at": transfer_credit.created_at,
+                    "status": transfer_credit.status,
+                    "updated_at": transfer_credit.updated_at,
+                    "possibleTransferrableCredits": transfer_credit.possibleTransferrableCredits
+                }
+                transfer_credits_requests.append(transfer_credit_data)
+
+        user_data = {  
+            "transferCreditsRequests" : transfer_credits_requests
+        }
+        response= {
+            'message': 'Successfully returned transfer credit requests of user',
+            'user_data' : user_data
+        }
+        return JsonResponse(response, status =200)
     except Exception as e:
         response = {
             "message": f"An unexpected error occurred: {e}"
@@ -355,28 +412,70 @@ def fetch_transfer_credit_requests(request):
 @csrf_exempt
 @require_http_methods("PUT")
 def update_transfer_credit_request(request):
+
     data = json.loads(request.body.decode('utf-8'))
 
     try:
         # Extract data fields
         email=data.get('email', '').strip()
         updated_request=data.get('updatedRequest')
+        list_of_transfer_credits = TransferCredits.objects.filter(email=email,fromModules=updated_request["fromModules"],toModules=updated_request["toModules"])
+        updated_possibleTransferrableCredits = 0
+        # Check if any objects are returned
+        if list_of_transfer_credits.exists():
+            # Access the objects in the queryset
+            transfer_credits_requests = TransferCredits.objects.get(email=email,fromModules=updated_request["fromModules"],toModules=updated_request["toModules"])
+            if transfer_credits_requests:
+                current_credits = transfer_credits_requests.possibleTransferrableCredits
+                subtracted_credits = int(transfer_credits_requests.toModules[0]['credits'])
+                updated_possibleTransferrableCredits = current_credits - subtracted_credits       
+                transfer_credits_requests.status = updated_request['status']
+                transfer_credits_requests.possibleTransferrableCredits = updated_possibleTransferrableCredits
+                transfer_credits_requests.updated_at = timezone.now()
+                transfer_credits_requests.save()
+            else:
+                response_data = {
+                    'message': "Transfer Credit Requests Updation Unsuccessful"
+                }
+                return JsonResponse(response_data, status =500) 
 
-        user_data = UserData.objects.get(email=email)
-
-        # Iterate through existing_transfer_requests to find the specific request
-        for i, transfer_request in enumerate(user_data.transfer_credits_requests):
-            if (
-                transfer_request['toModule'] == updated_request['toModule']
-                and transfer_request['fromModule'] == updated_request['fromModule']
-            ):
-                user_data.transfer_credits_requests[i]['status'] = updated_request['status']
-                break
-
-        # Save the updated user_data object
-        user_data.save()
+        # Retrieve all TransferCredit objects that match the filter criteria
+        transfer_credits_list = TransferCredits.objects.filter(email = email)
+        # Iterate through the queryset and update the 'possibleTransferrableCredits' field
+        for updated_transfer_credits in transfer_credits_list:
+            updated_transfer_credits.possibleTransferrableCredits = updated_possibleTransferrableCredits 
+            updated_transfer_credits.save()
+            
+        user_profile = UserProfile.objects.get(email=email)
+        if updated_request['status'] == "ACCEPTED":
+            # Here Generating pdf and sending an email
+            status_email = send_generated_pdf_on_email(data, user_profile, None,  EMAIL_BODY_APPROVED.format(user_profile.full_name), SUBJECT_SUCCESSFUL, PDF_BODY_APPROVED)
+        else:
+             status_email = send_generated_pdf_on_email(data, user_profile, None, EMAIL_BODY_REJECTED.format(user_profile.full_name), SUBJECT_REJECTED, PDF_BODY_REJECTED)
         response_data = {
                 'message': "Transfer Credit Requests Updated Successfully"
+        }
+        return JsonResponse(response_data, status =200) 
+    except Exception as e:
+        response = {
+            "message": f"An unexpected error occurred: {e}"
+        }
+        return JsonResponse(response, status =500)
+    
+@csrf_exempt
+@require_http_methods("PUT")
+def send_email_transfer_credit(request):
+
+    data = json.loads(request.body.decode('utf-8'))
+
+    try:
+        # Extract data fields
+        email=data.get('email', '').strip()
+        user_profile = UserProfile.objects.get(email=email)
+        status_email = send_generated_pdf_on_email(data, user_profile, None, EMAIL_BODY.format(user_profile.full_name), SUBJECT, PDF_BODY)
+
+        response_data = {
+                'message': "Transfer Credit Requests sent Successfully"
         }
         return JsonResponse(response_data, status =200) 
     except Exception as e:
@@ -408,3 +507,19 @@ def fetch_user_data(request):
             "message": f"An unexpected error occurred: {e}"
         }
         return JsonResponse(response, status =500)
+    
+@csrf_exempt
+@require_GET
+def fetch_departments(request):
+    server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+
+    qresponse = server.query(get_all_departments())
+    data_list = []
+    data = qresponse['results']['bindings']
+    
+    for row in data:
+        data_dict = {
+            'department': str(row['department']['value'])
+        }
+        data_list.append(data_dict)
+    return JsonResponse(data_list , safe=False)

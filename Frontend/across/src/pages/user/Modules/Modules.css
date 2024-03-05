@@ -28,28 +28,78 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.moduleCard h2 {
+.moduleCard h2,
+.listItems h2 {
   font-size: calc(1.125rem + 0.4vw);
 
 }
 
-.moduleCard h4 {
+.moduleCard h4,
+.listItems h4 {
   font-size: calc(1rem + 0.2vw);
 }
 
-.moduleCard p {
+.moduleCard p,
+.listItems p {
   font-size: calc(0.875rem + 0.1vw);
 }
 
-.moduleCard button {
+.moduleCard button,
+.listItems button {
   display: block;
   border: none;
   outline: none;
   padding: 9px 16px 10px 18px;
   background: #BCD8C1;
+  border-radius: 25px;
   color: #121212;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+renderedListItems {
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.listItems {
+  padding: 3rem !important;
+}
+
+.viewIcons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1rem 0;
+
+}
+
+.listViewIcon,
+.gridViewIcon {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.listViewIcon:hover,
+.gridViewIcon:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.listViewIcon svg,
+.gridViewIcon svg {
+  width: 50px;
+  height: auto;
+}
+
+.filterSectionContents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 706px) and (max-width: 1218px) {
@@ -80,6 +130,14 @@
   .moduleCard {
     width: 100%;
 
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .filterSectionContents {
+    display: flex;
+    flex-direction: column;
   }
 
 }

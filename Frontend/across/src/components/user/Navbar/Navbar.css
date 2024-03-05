@@ -1,6 +1,5 @@
 #navbar {
   background: #dcdbdb;
-  border-bottom: 5px solid var(--primary-color);
   position: fixed;
   left: 0;
   top: 0;
@@ -18,6 +17,7 @@
   font-size: 2.25rem;
   font-weight: 400;
   max-width: 80%;
+  text-shadow: 2px 2px 4px rgba(82, 80, 80, 0.5);
 }
 
 .navbar__brand span {
@@ -47,6 +47,10 @@
   font-family: "Figtree", sans-serif;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar__link>svg {
+  font-size: 1.25rem;
 }
 
 .userName span {

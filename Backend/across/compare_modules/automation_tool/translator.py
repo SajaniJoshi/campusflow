@@ -3,10 +3,12 @@ from deep_translator import GoogleTranslator , single_detection
 
 
 class module:
-    def __init__(self, name, moduleContent, uri, similar_modules):
+    def __init__(self, name, moduleContent, uri, moduleCreditPoints, moduleWorkLoad, similar_modules):
         self.name = name
         self.moduleContent = moduleContent
         self.uri = uri
+        self.moduleCreditPoints = moduleCreditPoints
+        self.moduleWorkLoad = moduleWorkLoad
         self.similar_modules = similar_modules
    
     def __getitem__(self, key):
@@ -36,7 +38,7 @@ def translateModules(file, consumer):
    for row in modules:
     consumer.send_message({"progress": 8 , "type": 10 ,"message": f"Translating {row.moduleName}"})
     translated =  GoogleTranslator(source=sourceLanguage, target='en').translate(row.moduleContent) if translationRequired else row.moduleContent
-    objectData = module(str(row.moduleName), str(translated), str(row.module), []) 
+    objectData = module(str(row.moduleName), str(translated), str(row.module), str(row.moduleCreditPoints), str(row.moduleWorkLoad), []) 
     data_list.append(objectData)
    
    return data_list

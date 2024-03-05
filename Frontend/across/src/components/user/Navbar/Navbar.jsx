@@ -6,13 +6,11 @@ import { FaUserGraduate } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
 import { RiLogoutBoxRFill } from "react-icons/ri";
 
-import enLanSvg from "../../../assets/images/en.svg";
-
 import { useAuth } from "../../../context/AuthContext";
 import MenuOpenButton from "../../MenuOpenButton/MenuOpenButton";
 import MenuCloseButton from "../../MenuCloseButton/MenuCloseButton";
 
-const Navbar = () => {
+const Navbar = ({ borderColor }) => {
   const [auth, setAuth] = useAuth();
 
   const handleSignOut = () => {
@@ -31,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <section id="navbar">
+      <section id="navbar" style={{ borderBottom: `4px solid ${borderColor}` }}>
         <div className="navbar__container">
           <header className="navbar__contents">
             <h1 className="navbar__brand">
@@ -49,7 +47,10 @@ const Navbar = () => {
                 <Link className="navbar__link" to="/campus-flow/user/profile">
                   <FaUserGraduate />
                 </Link>
-                <Link className="navbar__link">
+                <Link
+                  className="navbar__link"
+                  to="/campus-flow/user/notifications"
+                >
                   <FaBell />
                 </Link>
                 <Link
@@ -59,10 +60,6 @@ const Navbar = () => {
                 >
                   <RiLogoutBoxRFill />
                 </Link>
-                <Link className="navbar__link">
-                  <img src={enLanSvg} alt="great britain flag" />
-                </Link>
-
                 <Link
                   onClick={showNavbar}
                   className="navbar__menu-icons navbar__menu-close-icon"

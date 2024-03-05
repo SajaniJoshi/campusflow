@@ -154,3 +154,14 @@ def update_individual_module_by_admin(module_uri, updated_module_name, updated_m
     """
 
     return query
+
+def get_all_departments():
+    query = f"""
+    SELECT ?department (SAMPLE(?course) AS ?sampleCourse)
+    WHERE {{
+    ?course rdf:type <http://tuc/course#> .
+    ?course <http://tuc/course#belongsToDepartment> ?department .
+    }}
+    GROUP BY ?department
+    """
+    return query

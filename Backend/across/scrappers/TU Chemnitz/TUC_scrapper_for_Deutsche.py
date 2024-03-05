@@ -5,20 +5,22 @@ from docx import Document
 import json
 import json
 from rdflib import Graph, Literal, Namespace, RDF, URIRef
+import uuid
 
 ## This code will convert pdf data to output.docx file format
-def extract_text_from_pdf(pdf_path, start_page=14, end_page=None):
+def extract_text_from_pdf(pdf_path, start_page=13, end_page=None):
     text = ""
     with open(pdf_path, "rb") as pdf_file:
         pdf_reader = PyPDF2.PdfReader(pdf_file)
         
-        # Ensure end_page is not greater than the total number of pages
         if end_page is None or end_page > len(pdf_reader.pages):
             end_page = len(pdf_reader.pages)
         
         for page_number in range(start_page, end_page):
             page = pdf_reader.pages[page_number]
-            text += page.extract_text()
+            # Replace bullet points with blank spaces
+            page_text = page.extract_text().replace('•', '')
+            text += page_text
     return text
 
 # Function to write text to a Word document
@@ -29,7 +31,7 @@ def write_text_to_word(text, output_word_path):
 
 
 # Example PDF file path (replace this with your actual PDF file path)
-pdf_path = "C://Users//aksha//Downloads//data_science.pdf"
+pdf_path = "C://Users//aksha//Downloads//Courses PDF's//Web/AB_31_2015Teil1 (1).pdf"
 
 # Extract text from the PDF
 pdf_text = extract_text_from_pdf(pdf_path)
@@ -48,6 +50,7 @@ module_number_pattern = re.compile(r"  (\S+ [-\S]*)")
 module_name_pattern = re.compile(r"Modulname\s*(.+)")
 contents_pattern = re.compile(r"Inhalte\s*:\s*(.+?)\s*Qualifikationsziele\s*:", re.DOTALL)
 credit_points_pattern = re.compile(r"Leistungspunkte\s*u?nd\s*Noten\D*(\d+)")
+work_load_pattern = re.compile(r"Arbeitsaufwand\D*(\d+)\s*(?:\n\s*)*AS")
 
 # Function to extract information from a page
 def extract_information(page_text):
@@ -56,7 +59,10 @@ def extract_information(page_text):
     # Extract Module Number
     match_module_number = module_number_pattern.search(page_text)
     if match_module_number:
-        result["Modulnummer"] = match_module_number.group(1)
+        contents = match_module_number.group(1).strip()
+        # Remove Unwanted Space
+        contents = contents.replace(' ', '')
+        result["Modulnummer"] = contents
 
     # Extract Module Name
     match_module_name = module_name_pattern.search(page_text)
@@ -68,13 +74,18 @@ def extract_information(page_text):
     if match_contents:
         contents = match_contents.group(1).strip()
         # Remove unwanted characters
-        contents = contents.replace('\u2022', '').replace('\n', '')
+        contents = contents.replace('\n', '')
         result["Inhalte und Qualifikationsziele"] = contents
 
     # Extract Credit Points
     match_credit_points = credit_points_pattern.search(page_text)
     if match_credit_points:
         result["Leistungspunkte und Noten"] = match_credit_points.group(1)
+
+    # Extract Workload
+    match_work_load = work_load_pattern.search(page_text)
+    if match_work_load:
+        result["Arbeitsaufwand"] = match_work_load.group(1)
 
     return result
 
@@ -123,23 +134,48 @@ for module in data:
     module_name = module.get("Modulname", "")
     content = module.get("Inhalte und Qualifikationsziele", "")
     credit_points = module.get("Leistungspunkte und Noten", "")
+    work_load = module.get("Arbeitsaufwand", "")
 
+    # Generate a UUID based on the current timestamp and node (hardware address)
+    module_uuid = uuid.uuid1()
+
+    # Convert the UUID to a string
+    module_uuid_str = str(module_uuid)
     # RDF URI for the module
-    module_uri = URIRef(f"http://tuc.web.engineering/module#{module_name.replace(' ', '_')}")
+    module_uri = URIRef(f"http://tuc.web.engineering/module#{module_uuid_str}")
 
     # Add RDF triples for the module
     g.add((module_uri, RDF.type, module_ns))
     g.add((module_uri, URIRef("http://tuc.web.engineering/module#hasModuleNumber"), Literal(module_number, datatype="http://www.w3.org/2001/XMLSchema#string")))
     g.add((module_uri, URIRef("http://tuc.web.engineering/module#hasName"), Literal(module_name, datatype="http://www.w3.org/2001/XMLSchema#string")))
     g.add((module_uri, URIRef("http://tuc.web.engineering/module#hasContent"), Literal(content, datatype="http://www.w3.org/2001/XMLSchema#string")))
-    g.add((module_uri, URIRef("http://tuc.web.engineering/module#hasCreditPoints"), Literal(credit_points, datatype="http://www.w3.org/2001/XMLSchema#integer")))
+    
+    # Check if credit_points is non-empty before converting to integer
+    if credit_points:
+        try:
+            credit_points_value = int(credit_points)
+            g.add((module_uri, URIRef("http://tuc.web.engineering/module#hasCreditPoints"), Literal(credit_points_value, datatype="http://www.w3.org/2001/XMLSchema#integer")))
+        except ValueError as ve:
+            print(f"Error converting credit_points to integer for module {module_name}: {ve}")
+
+     # Check if work_load is non-empty before converting to integer
+    if work_load:
+        try:
+            work_load_value = int(work_load)
+            g.add((module_uri, URIRef("http://tuc.web.engineering/module#hasWorkLoad"), Literal(work_load_value, datatype="http://www.w3.org/2001/XMLSchema#integer")))
+        except ValueError as ve:
+            print(f"Error converting work_load to integer for module {module_name}: {ve}")
+
+    # Add additional RDF triples for each module
+    g.add((module_uri, URIRef("http://tuc/web/engineering/module#hasUniversity"), URIRef("http://across/university#TUC")))
+    g.add((module_uri, URIRef("http://tuc/course#hasCourse"), URIRef("http://tuc/course#WebEngineering")))
 
 # Serialize RDF graph to RDF/XML format
-rdf_output = g.serialize(format="xml")
+rdf_outputBytes = (g.serialize(format="xml")).encode('utf-8')
 
 # Save RDF data to a file with proper encoding
 output_rdf_path = "output.rdf"
-with open(output_rdf_path, "w", encoding="utf-8") as rdf_file:
-    rdf_file.write(rdf_output)
+with open(output_rdf_path, "wb") as rdf_file:
+    rdf_file.write(rdf_outputBytes)
 
 print(f"RDF data has been saved to {output_rdf_path}")

@@ -1,0 +1,11 @@
+tr:nth-of-type(2n) {
+    background-color: #bbd5cf;
+}
+
+tr:nth-of-type(2n-1) {
+    background-color: #439a86;
+}
+
+tr th {
+    background-color: white !important;
+}

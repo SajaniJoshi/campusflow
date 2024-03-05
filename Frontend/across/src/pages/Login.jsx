@@ -46,7 +46,7 @@ const Login = () => {
       return;
     }
 
-    const data = { email, password };
+    const data = { email, password, last_activity: new Date().toISOString() };
 
     try {
       const response = await login(data);
@@ -76,6 +76,7 @@ const Login = () => {
     try {
       const response = await googleSignIn({
         access_token: googleUser.getAuthResponse().id_token,
+        last_activity: new Date().toISOString()
       });
 
       console.log(response);

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "../assets/css/UsersofTransferCredits.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -9,18 +8,15 @@ import Col from "react-bootstrap/Col";
 import Badge from "react-bootstrap/Badge";
 import { useNavigate } from "react-router-dom";
 import AdminNavbar from "./components/Navbar/AdminNavbar";
+import { fetchUserData } from "../api/adminApi";
 
 const UsersofTransferCredits = () => {
   const [userData, setUserData] = useState([]);
   const navigate = useNavigate();
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "http://127.0.0.1:8000/adminapp/fetchUserData",
-          {}
-        );
+        const response = await fetchUserData();
         console.log(response);
         setUserData(response.data.user_data);
       } catch (error) {

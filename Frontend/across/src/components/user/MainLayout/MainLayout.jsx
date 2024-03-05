@@ -8,7 +8,7 @@ import "./MainLayout.css";
 const MainLayout = ({ children }) => {
   return (
     <div className="main-layout">
-      <Navbar />
+      <Navbar borderColor="#439a86" />
       <div className="mainlayout__contents">
         <Sidebar />
         <main className="mainlayout__content">{children}</main>

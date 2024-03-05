@@ -1,21 +1,45 @@
 import React, { useEffect, useState } from "react";
+import { Container, Button, Alert } from "react-bootstrap";
 import "./HomePage.css";
-import SearchBox from "../../../components/user/SearchBox/SearchBox";
 import MainLayout from "../../../components/user/MainLayout/MainLayout";
 import { NavLink } from "react-router-dom";
 import Loader from "../../../components/Loader/Loader";
+import { useAuth } from "../../../context/AuthContext";
+import { retrieveNotifications } from "../../../api/externalApi";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
+  const [transferCreditRequests, setTransferCreditRequests] = useState([]);
+  const [auth] = useAuth();
 
   useEffect(() => {
-    const showLoader = async () => {
-      await new Promise(resolve => setTimeout(resolve, 800));
+    const fetchData = async () => {
+      try {
+        // Simulate an asynchronous operation (API call)
+        await new Promise(resolve => setTimeout(resolve, 800));
 
-      setLoading(false);
+        const response = await retrieveNotifications({
+          email: auth.user.email,
+        });
+        setTransferCreditRequests(response.data.updates);
+      } catch (error) {
+        console.error("Error fetching transfer credit requests:", error);
+      } finally {
+        // After the API call is completed, set loading to false
+        setLoading(false);
+      }
     };
 
-    showLoader();
+    // Show the initial loader for 800 milliseconds
+    const initialLoaderTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+
+    // Perform the API call after the initial loader timeout
+    fetchData();
+
+    // Clear the initial loader timeout when the component unmounts or when the API call is complete
+    return () => clearTimeout(initialLoaderTimeout);
   }, []);
   return (
     <>
@@ -23,7 +47,6 @@ const HomePage = () => {
       {!loading && (
         <MainLayout>
           <div className="homePage">
-            <SearchBox />
             <div className="app__features">
               <h2>Welcome to CampusFlow</h2>
               <h4>
@@ -56,7 +79,10 @@ const HomePage = () => {
             <section className="homePage__quick__links">
               <h2>Quick Links for the Services</h2>
               <div className="quicklinksWrapper">
-                <NavLink className="quicklink quicklinkOne">
+                <NavLink
+                  className="quicklink quicklinkOne"
+                  to="/campus-flow/user/universities"
+                >
                   <h4>List of Across Universities</h4>
                   <p>
                     Information of the Across Universities, their departments
@@ -73,31 +99,56 @@ const HomePage = () => {
                     descriptions
                   </p>
                 </NavLink>
-                <NavLink  to="/campus-flow/user/transfer-credits" className="quicklink quicklinkThree">
+                <NavLink
+                  to="/campus-flow/user/transfer-credits"
+                  className="quicklink quicklinkThree"
+                >
                   <h4>Transferring the Credits</h4>
                   <p>
                     Transferring the selected credits from one university to
                     another
                   </p>
                 </NavLink>
-                <NavLink className="quicklink quicklinkFour">
-                  <h4>Studying Abroad</h4>
-                  <p>Suggestions on studying abroad,</p>
-                </NavLink>
               </div>
             </section>
-            <section className="homePage__notifications">
+            <div className="homePage__notifications">
               <h2>Notifications</h2>
-              <h4>You have one new notification</h4>
-              <p>
-                Your application status of transfering your credits to TU
-                Chemnitz has changed.
-              </p>
+              <h4>
+                You have {transferCreditRequests.length} new notification(s)
+              </h4>
 
-              <button className="notification__button" type="button">
+              {transferCreditRequests.map((request, index) => (
+                <Alert
+                  key={index}
+                  variant={request.status === "ACCEPTED" ? "primary" : "danger"}
+                  style={{ margin: "5px", width: "100%" }}
+                >
+                  <p>
+                    <small>
+                      <b>{new Date(request.updated_at).toLocaleString()}</b>
+                    </small>
+                    &nbsp;Your application status of transferring your credits
+                    from <strong>{request.fromModuleName}</strong> to{" "}
+                    <strong>{request.toModuleName}</strong> has got
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: request.status === "ACCEPTED" ? "green" : "red",
+                      }}
+                    >
+                      {" "}
+                      {request.status}
+                    </span>
+                  </p>
+                </Alert>
+              ))}
+              <NavLink
+                to="/campus-flow/user/notifications"
+                className="notifications"
+              >
                 See More
-              </button>
-            </section>
+              </NavLink>
+            </div>
           </div>
         </MainLayout>
       )}

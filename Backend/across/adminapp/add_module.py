@@ -17,7 +17,7 @@ def add_module_in_blaze(request):
         moduleCreditPoints = data.get('moduleCreditPoints','')
         moduleId = data.get('moduleId','')
         print(data)
-        server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql', post_queries=True, post_directly=True)
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql', post_queries=True, post_directly=True)
         
       
         uri_main = "http://tuc.web.engineering/module#"
@@ -34,7 +34,7 @@ def add_module_in_blaze(request):
         print(add_module(module_uri_g, module_id_g, module_name_g, module_content_g, credit_points_g, uri_course, uri_university))
         payload = {'update': add_module(module_uri_g, module_id_g, module_name_g, module_content_g, credit_points_g, uri_course, uri_university)}
         
-        result = requests.post("http://3.85.134.206/blazegraph/namespace/kb/sparql", data=payload)
+        result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=payload)
         print(result)
       #   print(add_module % (module_uri_g , module_uri_g ,module_id_g))
         

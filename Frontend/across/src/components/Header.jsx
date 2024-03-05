@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import brandLogo from "../assets/images/brandLogo.png";
 import MenuCloseButton from "./MenuCloseButton/MenuCloseButton";
 import MenuOpenButton from "./MenuOpenButton/MenuOpenButton";
+import { Navbar } from "react-bootstrap";
 
 const duration = 500;
 const Header = () => {
@@ -18,9 +19,25 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
-        <NavLink to="/">
-          <img src={brandLogo} className="header__brandImage" />
-        </NavLink>
+        <Navbar
+          expand="lg"
+          style={{
+            width: "100%",
+            margin: "auto",
+            padding: "0 20px",
+          }}
+        >
+          <Navbar.Brand
+            href="/admin/home"
+            style={{
+              fontSize: "40px",
+              color: "#000",
+              textShadow: "2px 2px 2px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            campus<b style={{ color: "#51829B" }}>flow</b>
+          </Navbar.Brand>
+        </Navbar>
       </div>
       <nav ref={navRef} className="header__contents">
         <div className="header__middle">

@@ -13,7 +13,7 @@ const CourseFinder = () => {
           Find Your Course That Makes Bright Future
         </h2>
         <p className="courseFinder__description text-sm">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Discover the path to a brighter future with CampusFlow – find your perfect course and embark on a journey toward academic excellence and personal growth.
         </p>
         <button
           type="button"

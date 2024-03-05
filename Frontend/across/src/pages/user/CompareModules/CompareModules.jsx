@@ -158,10 +158,20 @@ const CompareModules = () => {
     return (
       <div className="similarModuleCard">
         <div className="similarModuleName text-lg">
-          {similarModule.similarModuleName}
+          Module Name: {similarModule.similarModuleName}
         </div>
         <div className="similarModuleUniversity text-base">
           {similarModule.similarUniversity}
+        </div>
+        <div>
+          <b>Language: </b>
+          {similarModule.similarMouleLanguage} <br />
+          <b>Work Load: </b>
+          {similarModule.similarModuleWorkLoad} hours <br />
+          <b>Belongs to Program: </b>
+          {similarModule.similarModuleProgram} <br />
+          <b>Belongs to Department: </b>
+          {similarModule.similarModuleDepartment}
         </div>
         <div style={{ textAlign: "left" }}>{contents}</div>
       </div>
@@ -171,7 +181,6 @@ const CompareModules = () => {
   return (
     <>
       <MainLayout>
-        <SearchBox />
         <h1 className="compareModules__heading">Compare Modules</h1>
         <div className="compareModulesWrapper">
           <h4>Universities</h4>

@@ -8,6 +8,7 @@ class UserProfile(models.Model):
     university_name = models.TextField(null=True)
     signup_using = models.TextField()
     role = models.TextField()
+    last_activity = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         return self.email

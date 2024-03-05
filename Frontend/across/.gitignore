@@ -14,6 +14,8 @@ dist-ssr
 *.jar
 *.jnl
 
+settings.py
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

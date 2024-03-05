@@ -15,6 +15,7 @@ from google.auth.transport.requests import Request as GoogleAuthRequest
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_GET
 from django.contrib.auth.hashers import check_password
 
 @csrf_exempt
@@ -27,7 +28,7 @@ def register_user(request):
         full_name = data.get('full_name', '').strip()
         password = data.get('password', '').strip()
         confirmPassword = data.get('confirmPassword', '').strip()
-        
+        last_activity = data.get('last_activity','').strip()
         
         try:
             existing_profiles = UserProfile.objects.filter(email=email)
@@ -41,7 +42,7 @@ def register_user(request):
             hashed_password = make_password(password)
 
               # Save the data with the hashed password
-            user_profile = UserProfile(email=email, full_name=full_name, password=hashed_password, university_name="", signup_using='FORM', role='USER')
+            user_profile = UserProfile(email=email, full_name=full_name, password=hashed_password, university_name="", signup_using='FORM', role='USER', last_activity=last_activity)
             user_profile.save()
             # Generate JWT token upon successful registration
             payload = {
@@ -85,6 +86,7 @@ def google_login(request):
         # Parse JSON data from the request body
         data = json.loads(body)
         access_token = data.get('access_token', '')
+        last_activity = data.get('last_activity','')
     except json.JSONDecodeError:
         return JsonResponse({'error': 'Invalid JSON data in the request body'}, status=400)
 
@@ -124,7 +126,7 @@ def google_login(request):
         user, created = User.objects.get_or_create(
             email=email_id,
             defaults={'first_name': first_name, 'last_name': last_name, 'username': email_id,
-                      'password': make_password('encryptedsamplepasswordforgooglesignin')}
+                      'password': make_password('encryptedsamplepasswordforgooglesignin'),'last_activity':last_activity}
         )
         user.save()
     except Exception as e:
@@ -146,14 +148,15 @@ def google_login(request):
             # Perform additional actions after successful login
             user_profile_from_google = UserProfile(email=email_id, full_name=first_name + ' ' + last_name,
                                                    password=make_password('encryptedsamplepasswordforgooglesignin'),
-                                                   university_name='', signup_using='GOOGLE', role="USER")
+                                                   university_name='', signup_using='GOOGLE', role="USER", last_activity = last_activity)
             user_profile_from_google.save()
             user_profile_data = {
                         'email': user_profile_from_google.email,
                         'full_name': user_profile_from_google.full_name,
                         'university_name': user_profile_from_google.university_name,
                         'signup_using': user_profile_from_google.signup_using,
-                        'role':user_profile_from_google.role
+                        'role':user_profile_from_google.role,
+                        'last_activity':last_activity
                     } 
             response_data = {
                 'message': 'User account created successfully'
@@ -161,12 +164,15 @@ def google_login(request):
         ## In future need to remove this access_token from here
         else:
             user_profile = UserProfile.objects.get(email=email_id)
+            user_profile.last_activity = last_activity
+            user_profile.save()
             user_profile_data = {
                         'email': user_profile.email,
                         'full_name': user_profile.full_name,
                         'university_name': user_profile.university_name,
                         'signup_using': user_profile.signup_using,
-                        'role':user_profile.role
+                        'role':user_profile.role,
+                        'last_activity':last_activity
                     }
             response_data = {
                 'message': 'User account already exist, logging you in...'
@@ -202,19 +208,23 @@ def authenticate_user_login(request):
             # Extract email and password from the data
             email = data.get('email', '')
             password = data.get('password', '')
+            last_activity = data.get('last_activity','')
 
             # Perform authentication
             user_profile = UserProfile.objects.get(email=email)
             if user_profile is not None:
                 passwords_match = check_password(password, user_profile.password)
                 if passwords_match:
+                    user_profile.last_activity = last_activity
+                    user_profile.save()
                     # Serialize the UserProfile instance to JSON
                     user_profile_data = {
                         'email': user_profile.email,
                         'full_name': user_profile.full_name,
                         'university_name': user_profile.university_name,
                         'signup_using': user_profile.signup_using,
-                        'role':user_profile.role
+                        'role':user_profile.role,
+                        'last_activity':last_activity
                     }
 
                     payload = {
@@ -249,9 +259,10 @@ def update_user_role(request):
     if request.method == 'POST':
         try:
             # Parse JSON data from the request body
-            data = json.loads(request.body.decode('utf-8'))
+            data = json.loads(request.body)
             # Extract email from the data
-            email = data.get('email', '')
+            emailObj = json.loads(data.get('data', ''))
+            email = emailObj.get('email', '')
 
             user_profile = UserProfile.objects.get(email=email)
             
@@ -264,12 +275,32 @@ def update_user_role(request):
             # Save the changes to the database
             user_profile.save()
 
-            return JsonResponse({'message': f'Update successful. {user_profile.full_name} is an admin.'}, status=200)
+            return JsonResponse({'message': 'User update successful.', 'data' : data}, status=200)
 
         except ObjectDoesNotExist:
             return JsonResponse({'message': "Email is incorrect"}, status=401)
     else:
         return JsonResponse({'message': 'Invalid request method.'}, status=400)
+    
+@csrf_exempt
+@require_GET
+def fetch_users(request):
+    try:
+        all_users = []
+        # Convert the queryset to a list of dictionaries
+        for user_profile in UserProfile.objects.all():
+            user_data_list = {'email': user_profile.email,
+                               'full_name': user_profile.full_name,
+                               'university_name': user_profile.university_name,
+                               'role': user_profile.role}
+            all_users.append(user_data_list)
+        # Return the data as JSON response
+        return JsonResponse({'user_data': all_users}, safe=False)
+    except Exception as e:
+        response = {
+            "message": f"An unexpected error occurred: {e}"
+        }
+        return JsonResponse(response, status =500)
 
 @csrf_exempt
 def update_user(request):
@@ -307,7 +338,7 @@ def delete_user(request):
             userFullName = user_profile.full_name
             # Delete the user
             user_profile.delete()
-            return JsonResponse({'message': f'Delete successful. {userFullName} has been deleted.'}, status=200)     
+            return JsonResponse({'message': f'User deletion successful.'}, status=200)     
         except ObjectDoesNotExist:
             return JsonResponse({'message': "Email is incorrect"}, status=401)
     else:

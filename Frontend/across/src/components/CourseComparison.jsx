@@ -15,7 +15,7 @@ const CourseComparison = () => {
           Elevating Education: Unmatched Modules, Unique Features
         </h2>
         <p className="courseComparison__description text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          CampusFlow provides a superior educational journey by offering exceptional modules and unique features, setting it apart from other platforms. It highlights the platform's commitment to delivering a distinctive and elevated learning experience for users.
         </p>
         <button type="button" className="courseComparison__button">
           Explore Here

@@ -10,7 +10,7 @@ from django.views.decorators.http import require_POST, require_GET
 @require_GET
 def list_similar_modules(request):
     try:
-        server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
 
         qresponse = server.query(list_with_similar_modules_query)
         data_list = []
@@ -47,7 +47,7 @@ def get_similar_module_against_given_module_uri(request):
     try:
         moduleUri = request.GET.get('moduleUri', '')
         moduleName = ''
-        server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
         uniqueResults = set()
         # Fetch Module Name from Module Details
         module_details = server.query(get_module_details_from_module_uri(moduleUri))
@@ -76,6 +76,12 @@ def get_similar_module_against_given_module_uri(request):
                 'similarModuleCreditPoints': str(row['similarModuleCreditPoints']['value']),
                 'similarUniversity': str(row['universityNameSimilar']['value']),
                 'courseNameSimilar': str(row['courseNameSimilar']['value']),
+                
+                'similarModuleWorkLoad': str(row['similarModuleWorkLoad']['value']),
+                'similarMouleLanguage': str(row['similarMouleLanguage']['value']),
+                'similarModuleProgram': str(row['similarModuleProgram']['value']),
+                'similarModuleDepartment': str(row['similarModuleDepartment']['value']),
+
                 'moduleUri': str(row['module']['value']),
                 'similarModuleUri': str(row['similarModule']['value']),
                 }
@@ -130,7 +136,7 @@ def get_modules_from_course_and_university(request):
         sparql_query = get_modules_from_course_and_university_query(courseUri, courseName, universityUri)
 
         # Execute the SPARQL query
-        server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
 
         qresponse = server.query(sparql_query)
         module_list = []
@@ -181,7 +187,7 @@ def get_modules_from_course_and_university(request):
 @require_GET
 def get_all_modules(request):
     try:
-        server = sparql.SPARQLServer('http://3.85.134.206:80/bigdata/sparql')
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
 
         qresponse = server.query(get_all_modules_query())
         data_list = []
@@ -194,8 +200,12 @@ def get_all_modules(request):
                 'module_name': row['sampleModuleName']['value'],
                 'module_content': row['sampleModuleContent']['value'],
                 'module_credit_points': row['sampleModuleCreditPoints']['value'],
+                'module_workload': row['sampleModuleWorkLoad']['value'],
                 'belongs_to_university': row['sampleUniversityName']['value'],
                 'belongs_to_course': row['sampleCourseName']['value'],
+                'belongs_to_program': row['sampleModuleBelongsToProgram']['value'],
+                'belongs_to_department': row['sampleModuleBelongsToDepartment']['value'],
+                'has_language': row['sampleModuleHasLanguage']['value']
             }
             data_list.append(data_dict)
 
@@ -205,3 +215,70 @@ def get_all_modules(request):
             "message": f"An unexpected error occurred: {e}"
         }
         return JsonResponse(response, status =500)
+
+
+@csrf_exempt
+@require_GET
+def get_searched_modules(request):
+    search_term = request.GET.get('queryTerm', '')
+    try:
+        
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        searchedResponse = server.query(get_searched_modules_query(search_term))
+
+        retrievedModules_list = []
+        for row in searchedResponse['results']['bindings']:
+            searched_modules = {
+                'module_uri': row['moduleUri']['value'],
+                'module_number': row['sampleModuleNumber']['value'],
+                'module_name': row['sampleModuleName']['value'],
+                'module_content': row['sampleModuleContent']['value'],
+                'module_credit_points': row['sampleModuleCreditPoints']['value'],
+                'module_workload': row.get('sampleModuleWorkLoad', {}).get('value', ''),
+                'belongs_to_university': row['sampleUniversityName']['value'],
+                'belongs_to_course': row['sampleCourseName']['value'],
+                'belongs_to_program': row['sampleModuleBelongsToProgram']['value'],
+                'belongs_to_department': row['sampleModuleBelongsToDepartment']['value'],
+                'has_language': row['sampleModuleHasLanguage']['value']
+            }
+            retrievedModules_list.append(searched_modules)
+
+        return JsonResponse(retrievedModules_list, safe=False, json_dumps_params={'indent': 2})
+    except Exception as e:
+        response = {
+            "message": f"An unexpected error occurred: {e}"
+        }
+        return JsonResponse(response, status=500)
+
+@csrf_exempt
+@require_GET
+def get_module_details(request):
+    moduleUri = request.GET.get('moduleUri', '')
+    try:
+        
+        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        retrievedModuleDetails = server.query(get_module_details_query(moduleUri))
+
+        retrievedModuleDetails_list = []
+        for row in retrievedModuleDetails['results']['bindings']:
+            moduleDetails_dict = {
+                'module_uri': row['moduleUri']['value'],
+                'module_number': row['moduleNumber']['value'],
+                'module_name': row['moduleName']['value'],
+                'module_content': row['moduleContent']['value'],
+                'module_credit_points': row['moduleCreditPoints']['value'],
+                'module_workload': row.get('moduleWorkLoad', {}).get('value', ''),
+                'belongs_to_university': row['universityName']['value'],
+                'belongs_to_course': row['courseName']['value'],
+                'belongs_to_program': row['courseProgram']['value'],
+                'belongs_to_department': row['courseBelongsToDepartment']['value'],
+                'has_language': row['courseHasLanguage']['value']
+            }
+            retrievedModuleDetails_list.append(moduleDetails_dict)
+
+        return JsonResponse(retrievedModuleDetails_list, safe=False, json_dumps_params={'indent': 2})
+    except Exception as e:
+        response = {
+            "message": f"An unexpected error occurred: {e}"
+        }
+        return JsonResponse(response, status=500)

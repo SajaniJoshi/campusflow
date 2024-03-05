@@ -153,6 +153,15 @@
     flex-direction: column;
   }
 
+  .centerFile{
+    display: flex;
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .centerSlide2Image{
     display: flex;
     flex: 1;
@@ -168,3 +177,7 @@
     padding: 10px;
     margin: auto;
   }  
+
+  input[type=checkbox] {
+    accent-color: #439a86;
+  }

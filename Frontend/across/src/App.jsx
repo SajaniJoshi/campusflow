@@ -24,6 +24,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CompareModules from "./pages/user/CompareModules/CompareModules";
 import TransferCredits from "./pages/user/TransferCredits/TransferCredits";
 import Protected from "./components/Protected/Protected";
+import Notifications from "./pages/user/Notifications/Notifications";
+import ModuleDetailsPage from "./pages/user/ModuleDetailsPage/ModuleDetailsPage";
 
 const App = () => {
   useEffect(() => {
@@ -117,6 +119,15 @@ const App = () => {
             }
           />
           <Route
+            path="/campus-flow/user/modules/:moduleId"
+            exact
+            element={
+              <Protected>
+                <ModuleDetailsPage />
+              </Protected>
+            }
+          />
+          <Route
             path="/campus-flow/user/compare-modules"
             exact
             element={
@@ -125,7 +136,7 @@ const App = () => {
               </Protected>
             }
           />
-            <Route
+          <Route
             path="/campus-flow/user/transfer-credits"
             exact
             element={
@@ -143,7 +154,15 @@ const App = () => {
               </Protected>
             }
           />
-
+          <Route
+            path="/campus-flow/user/notifications"
+            exact
+            element={
+              <Protected>
+                <Notifications />
+              </Protected>
+            }
+          />
           <Route
             path="/admin/*"
             element={

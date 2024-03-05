@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "http://127.0.0.1:8000",
+export const api = axios.create({
+  baseURL: import.meta.env.VITE_BACKEND_API,
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
@@ -12,6 +12,30 @@ export const getAllModules = async () => {
   let response;
   try {
     response = await api.get("/modules/getAllModules");
+  } catch (error) {
+    return error;
+  }
+  return response;
+};
+
+export const getSearchedModules = async data => {
+  let response;
+  try {
+    response = await api.get("/modules/search", {
+      params: { queryTerm: data },
+    });
+  } catch (error) {
+    return error;
+  }
+  return response;
+};
+
+export const getModuleDetails = async data => {
+  let response;
+  try {
+    response = await api.get("/modules/moduleDetails", {
+      params: { moduleUri: data },
+    });
   } catch (error) {
     return error;
   }
@@ -43,6 +67,31 @@ export const getCompletedModules = async data => {
   let response;
   try {
     response = await api.post("/user/fetchCompletedModulesofUser", data);
+  } catch (error) {
+    return error;
+  }
+
+  return response;
+};
+
+export const retrieveNotifications = async data => {
+  let response;
+  try {
+    response = await api.post("/user/retrieveNotifications", data);
+  } catch (error) {
+    return error;
+  }
+
+  return response;
+};
+
+export const retrieveTransferCreditRequestsforUser = async data => {
+  let response;
+  try {
+    response = await api.post(
+      "/transferCredits/fetchTransferCreditsRequests",
+      data
+    );
   } catch (error) {
     return error;
   }

@@ -29,7 +29,7 @@ function PageBody({ auth }) {
       description:
         "Effortlessly oversee and manage user accounts, ensuring smooth access and interactions within the platform.",
       buttonText: "Show Users",
-      link: "/manage-users",
+      link: "/admin/userlist",
     },
     {
       title: "Modules",
@@ -50,7 +50,7 @@ function PageBody({ auth }) {
       description:
         "Facilitate the management and coordination of universities, fostering collaboration and excellence across educational institutions.",
       buttonText: "Run Automation",
-      link: "/admin/upload",
+      link: "/admin/generateRDF",
     },
     {
       title: "Similar Modules",
@@ -60,11 +60,11 @@ function PageBody({ auth }) {
       link: "/admin/similaritytable",
     },
     {
-      title: "CSV to RDF",
+      title: "PDF to RDF",
       description:
         "Facilitate the management and coordination of universities, fostering collaboration and excellence across educational institutions.",
       buttonText: "Convert to RDF",
-      link: "/manage-CSV",
+      link: "/admin/generateRDF",
     },
     {
       title: "Transfer Credit Requests",

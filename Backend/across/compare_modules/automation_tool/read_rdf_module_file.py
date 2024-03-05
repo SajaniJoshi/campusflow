@@ -5,6 +5,8 @@ def readRDFFile(file):
  graph = rdflib.Graph()
  
  graph.parse(file)
+ v = graph.serialize(format='xml')
+ print("value:"+v)
  
  module_list = graph.query(module_list_query)
  module_first_only = graph.query(module_list_query_first_item_only)

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/css/Register.css";
+import "../assets/css/register.css";
 
 import resigterSvg from "../assets/images/registerPage_highschool.svg";
 
@@ -65,7 +65,7 @@ const Register = () => {
       return;
     }
 
-    const data = { full_name, email, password, confirmPassword };
+    const data = { full_name, email, password, confirmPassword, last_activity: new Date().toISOString() };
 
     try {
       const response = await register(data);

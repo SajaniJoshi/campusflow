@@ -14,6 +14,7 @@ import Row from "react-bootstrap/Row";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AdminNavbar from "./components/Navbar/AdminNavbar";
+import { api } from "../api/externalApi";
 
 const ModulesList = () => {
   const [universities, setUniversities] = useState([]);
@@ -72,12 +73,8 @@ const ModulesList = () => {
       module_content: moduleContent,
       module_credit_points: modulePoints,
     }))
-    fetch("http://127.0.0.1:8000/adminapp/insertModule", {
+    api.post("/adminapp/insertModule", {
       method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
       body: JSON.stringify({
         email: "dansari@gmail.com",
         university: addUniversityUri,
@@ -112,12 +109,7 @@ const ModulesList = () => {
       module_credit_points: currentModule.moduleCreditPoints,
       module_uri: currentModule.moduleUri,
     });
-    fetch("http://127.0.0.1:8000/adminapp/updateModule", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
+    api.post("adminapp/updateModule", {
       body: JSON.stringify({
         email: "dansari@gmail.com",
         university: selectedUniversityName,
@@ -151,12 +143,8 @@ const ModulesList = () => {
   };
 
   const deleteModule = uri => {
-    fetch("http://127.0.0.1:8000/adminapp/deleteModule", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
+    api.post("/adminapp/deleteModule", {
+      
       body: JSON.stringify({
         email: "dansari@gmail.com",
         module_uri: uri,
@@ -198,14 +186,7 @@ const ModulesList = () => {
   };
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/adminapp/universitieslist", {
-      // method: "GET",
-      // headers: {
-      //   Accept: "application/json",
-      //   "Content-Type": "application/json",
-      //   token: token
-      // },
-    })
+    api.get("adminapp/universitieslist")
       .then(response => response.json())
       .then(json => {
         setUniversities(json);
@@ -236,12 +217,7 @@ const ModulesList = () => {
   };
 
   const getModuleList = (uri, name) => {
-    fetch("http://127.0.0.1:8000/modules/", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
+    api.post("/modules/", {
       body: JSON.stringify({
         universityUri: selectedUniversityUri,
         courseUri: uri,
@@ -257,12 +233,7 @@ const ModulesList = () => {
   };
 
   const getCoursesList = (uri, name, isAdd) => {
-    fetch("http://127.0.0.1:8000/courses/", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
+    api.post("/courses/", {
       body: JSON.stringify({
         universityUri: uri,
         universityName: name,

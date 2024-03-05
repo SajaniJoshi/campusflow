@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import pymysql
+
+pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -54,7 +57,7 @@ INSTALLED_APPS = [
     'transfer_credits',
     'universities',
     'user',
-    'csv_to_rdf'
+    'pdf_To_rdf'
 ]
 
 ASGI_APPLICATION = 'across.asgi.application'
@@ -119,9 +122,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'across',
-        'USER': 'root',
-        'PASSWORD': 'sarose3532@SAH',
-        'HOST': '127.0.0.1',  # or the hostname where your MySQL server is running
+        'USER': 'admin',
+        'PASSWORD': 'MasterAdmin123',
+        'HOST': 'across.czeu6468ix6a.eu-north-1.rds.amazonaws.com',  # or the hostname where your MySQL server is running
         'PORT': '3306',      # or the port on which your MySQL server is listening
     }
 }
@@ -146,7 +149,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Replace with your React frontend URL
+     'http://campusflowfrontend.s3-website.eu-north-1.amazonaws.com',  # Replace with your React frontend URL
+     "http://localhost:5173"
 ]
 
 CORS_ALLOW_METHODS = [
