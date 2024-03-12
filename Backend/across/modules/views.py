@@ -10,7 +10,7 @@ from django.views.decorators.http import require_POST, require_GET
 @require_GET
 def list_similar_modules(request):
     try:
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
 
         qresponse = server.query(list_with_similar_modules_query)
         data_list = []
@@ -47,7 +47,7 @@ def get_similar_module_against_given_module_uri(request):
     try:
         moduleUri = request.GET.get('moduleUri', '')
         moduleName = ''
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
         uniqueResults = set()
         # Fetch Module Name from Module Details
         module_details = server.query(get_module_details_from_module_uri(moduleUri))
@@ -136,7 +136,7 @@ def get_modules_from_course_and_university(request):
         sparql_query = get_modules_from_course_and_university_query(courseUri, courseName, universityUri)
 
         # Execute the SPARQL query
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
 
         qresponse = server.query(sparql_query)
         module_list = []
@@ -187,7 +187,7 @@ def get_modules_from_course_and_university(request):
 @require_GET
 def get_all_modules(request):
     try:
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
 
         qresponse = server.query(get_all_modules_query())
         data_list = []
@@ -223,7 +223,7 @@ def get_searched_modules(request):
     search_term = request.GET.get('queryTerm', '')
     try:
         
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
         searchedResponse = server.query(get_searched_modules_query(search_term))
 
         retrievedModules_list = []
@@ -256,7 +256,7 @@ def get_module_details(request):
     moduleUri = request.GET.get('moduleUri', '')
     try:
         
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
         retrievedModuleDetails = server.query(get_module_details_query(moduleUri))
 
         retrievedModuleDetails_list = []

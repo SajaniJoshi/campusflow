@@ -8,7 +8,7 @@ def find_similarity_between_courses(data, other_university):
         department_name = data['belongs_to_department']
         course_language = data['has_language']
         program_type = data['belongs_to_program']
-        server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
 
         # This query will return the results after filtering out courses with department, course language and program type university-wise
         qresponse = server.query(get_course_uri_from_departments_and_university(department_name, other_university,course_language, program_type))

@@ -18,19 +18,19 @@ def upload_file_to_blazegraph(directory, file, isFile):
         #   graph.parse(os.path.join(root, file),'r', encoding='utf-8')
         #   print(data1)
         #   datae = parse.urlencode(data1).encode("utf-8")
-        #   req = urllib2.Request(url="http://13.51.109.79/blazegraph/namespace/kb/sparql", 
+        #   req = urllib2.Request(url="http://16.171.152.55/blazegraph/namespace/kb/sparql", 
         #               data=datae, 
         #               headers={'Content-Type': 'application/xml'})
         #   urllib2.urlopen(req)
-        #   result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", files=data1)
+        #   result = requests.post("http://16.171.152.55/blazegraph/namespace/kb/sparql", files=data1)
         #   print(result)
-        #   server = sparql.SPARQLServer('http://13.51.109.79/blazegraph/bigdata/sparql')
+        #   server = sparql.SPARQLServer('http://16.171.152.55/blazegraph/bigdata/sparql')
         #   server.update('load <http://bioimages.vanderbilt.edu/baskauf/12255>')
         # xml = """<?xml version='1.0' encoding='utf-8'?>
         #       <a>б</a>"""
         data_xml = graph.serialize(format='xml')
         # print(data_xml)
-        result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=data_xml.encode('utf-8'), headers={'Content-Type': 'application/xml'})
+        result = requests.post("http://16.171.152.55/blazegraph/namespace/kb/sparql", data=data_xml.encode('utf-8'), headers={'Content-Type': 'application/xml'})
         print(result.content)
         
     else:
@@ -40,7 +40,7 @@ def upload_file_to_blazegraph(directory, file, isFile):
        with open(pathValue, 'rb') as rdf_file:
               graph.parse(rdf_file, format='xml')
        data_xml = graph.serialize(format='xml')
-       result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=data_xml.encode('utf-8'), headers={'Content-Type': 'application/xml'})
+       result = requests.post("http://16.171.152.55/blazegraph/namespace/kb/sparql", data=data_xml.encode('utf-8'), headers={'Content-Type': 'application/xml'})
        print(result) 
 
 

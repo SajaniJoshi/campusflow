@@ -16,7 +16,7 @@ def create_course_entry_in_rdf(data):
 
     course_uri = ''
     university_uri=''
-    server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+    server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
 
     # Generate a short UUID
     short_uuid = shortuuid.uuid()
@@ -69,7 +69,7 @@ def create_course_entry_in_rdf(data):
 
     payload = {'update': add_course(uuid_numeric_only, course_uri, course_name, belongs_to_program, belongs_to_department, university_uri,has_language)}
         
-    result = requests.post("http://13.51.109.79/blazegraph/namespace/kb/sparql", data=payload)
+    result = requests.post("http://16.171.152.55/blazegraph/namespace/kb/sparql", data=payload)
     
     if result.status_code == 200:
         response_data = {

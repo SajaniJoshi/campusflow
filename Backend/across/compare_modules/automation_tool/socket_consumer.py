@@ -38,7 +38,7 @@ class Consumer(WebsocketConsumer):
             # }
 
             # Construct the absolute path
-            server = sparql.SPARQLServer('http://13.51.109.79/bigdata/sparql')
+            server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
 
             # # Getting University URI
             qresponse = server.query(get_other_universities_except_given(response_data['university_name']))

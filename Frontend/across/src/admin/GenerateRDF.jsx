@@ -4,7 +4,7 @@ import axios from "axios";
 import { FiCheckCircle } from "react-icons/fi";
 import { Form, Col, Row, Container, Button, Modal } from "react-bootstrap";
 import "../assets/css/FileUpload.css";
-import { useNavigate } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 import { api, fetchDepartmentsData } from "../api/adminApi";
 import { getUniversities } from "../api/compareModuleApi";
 
@@ -101,7 +101,7 @@ const GenerateRDF = () => {
             ...prevData,
             belongsToDepartment: name === "belongsToDepartment" && prevData.belongsToDepartment === "Other" ? prevData.customDepartment : prevData.belongsToDepartment,
             [name]: value,
-        }));   
+        }));
     };
     const handleRedirect = () => {
         if (redirectData) {
@@ -144,7 +144,7 @@ const GenerateRDF = () => {
                     courseName: formData.courseName,
                     belongsToUniversity: formData.belongsToUniversity,
                     belongsToProgram: formData.belongsToProgram,
-                    belongsToDepartment: formData.customDepartment,
+                    belongsToDepartment: formData.belongsToDepartment,
                     hasLanguage: formData.hasLanguage,
                 };
 

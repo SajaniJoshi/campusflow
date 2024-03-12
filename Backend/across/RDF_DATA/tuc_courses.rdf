@@ -75,6 +75,118 @@
     <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
   </rdf:Description>
 
+    <!-- Course: TUCRegenerativeEnergietechnik -->
+  <rdf:Description rdf:about="http://tuc/course#TUCRegenerativeEnergietechnik">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regenerative Energietechnik</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+    <!-- Course: TUCNeurorobotics -->
+  <rdf:Description rdf:about="http://tuc/course#TUCNeurorobotics">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurorobotics</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</course:hasLanguage>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+  <!-- Course: TUCMikrosystemeundMikroelektronik -->
+  <rdf:Description rdf:about="http://tuc/course#TUCMikrosystemeundMikroelektronik">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mikrosysteme und Mikroelektronik</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</course:hasLanguage>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+<!-- Course: TUCMicroandNanoSystems -->
+  <rdf:Description rdf:about="http://tuc/course#TUCMicroandNanoSystems">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro and NanoSystems</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+<!-- Course: TUCInformationandCommunicationSystems -->
+  <rdf:Description rdf:about="http://tuc/course#TUCInformationandCommunicationSystems">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information and CommunicationSystems</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+  
+<!-- Course: TUCEmbeddedSystems -->
+  <rdf:Description rdf:about="http://tuc/course#TUCEmbeddedSystems">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embedded Systems</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+  <!-- Course: TUCElektromobilität -->
+  <rdf:Description rdf:about="http://tuc/course#TUCElektromobilität">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elektromobilität</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+ <!-- Course: TUCBiomedizinischeTechnik  -->
+  <rdf:Description rdf:about="http://tuc/course#TUCBiomedizinischeTechnik ">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedizinische Technik</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+ <!-- Course: TUCAutomotiveInformatics  -->
+  <rdf:Description rdf:about="http://tuc/course#TUCAutomotiveInformatics ">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automotive Informatics</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
+   <!-- Course: TUCAdvancedManufacturing  -->
+  <rdf:Description rdf:about="http://tuc/course#TUCAdvancedManufacturing ">
+    <rdf:type rdf:resource="http://tuc/course#"/>
+    <course:hasCourseNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</course:hasCourseNumber>
+    <course:hasCourseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Manufacturing</course:hasCourseName>
+    <course:belongsToProgram rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master</course:belongsToProgram>
+    <course:hasLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</course:hasLanguage>
+    <course:belongsToDepartment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical Engineering</course:belongsToDepartment>
+    <university:belongsToUniversity rdf:resource="http://across/university#TUC"/>
+  </rdf:Description>
+
 <!--BU Programmes and Courses-->
 <rdf:Description rdf:about="http://tuc/course#BUComputerScience">
     <rdf:type rdf:resource="http://tuc/course#"/>

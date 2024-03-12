@@ -20,39 +20,40 @@ def read_modules_and_compare(universityOneModulesFile, only_files_in_folder, con
     else:
      ssl._create_default_https_context = _create_unverified_https_context
     nlp = spacy.load('en_core_web_lg')
-
-    firstUniversityModules = translateModules(universityOneModulesFile, consumer)
-    for file_name in only_files_in_folder:
-        univeristyTwoModulesFile = file_name
-        consumer.send_message({"progress": 2 , "type": 0 , "message": "Starting module conversions"})
-        consumer.send_message({"progress": 3 , "type": 10, "message": "First modules file translated to english successfully"})
-        secondUniversityModules = translateModules(univeristyTwoModulesFile , consumer)
-        consumer.send_message({"progress": 4 , "type": 10, "message": "Second modules file translated to english successfully"})
-        data_list_first = []
-        data_list_second = []
-        consumer.send_message( {"progress": 6 , "type": 10, "message": "Starting to find similarities between modules"})
-        filteredFirstUniversityModules , filteredSecondUniversityModules = filter_modules_by_workload(firstUniversityModules, secondUniversityModules)
-        count = 2
-        for module in filteredFirstUniversityModules:
-            for module2 in filteredSecondUniversityModules:
-                text1 = module.name if(module.moduleContent == "This course has not yet been described...") else module.moduleContent
-                text2 = module2.name if(module2.moduleContent == "This course has not yet been described...") else module2.moduleContent
-                similarity = find_text_similarity_spacy(text1, text2, nlp)
-                consumer.send_message({"progress": 5 * count , "type": 2 if similarity else 3, "message": f"{module.name} - {module2.name} are similar : {similarity}"})
-                if(similarity):
-                    similar_modules_m1 = []
-                    similar_modules_m2 = []
-                    similar_modules_m1.append(module2.uri)
-                    similar_modules_m2.append(module.uri)
-                    module['similar_modules'] = similar_modules_m1
-                    module2['similar_modules'] = similar_modules_m2
-                    data_list_first.append(module)
-                    data_list_second.append(module2)
-                    consumer.send_message({"progress": 50 , "type": 10, "message": "Starting to find similarities between modules"})
-            count = count + 0.1    
-            
-        add_predicate_for_module_similarity(universityOneModulesFile, univeristyTwoModulesFile, data_list_first, data_list_second, consumer)
-    
+    if len(only_files_in_folder) > 0:
+        firstUniversityModules = translateModules(universityOneModulesFile, consumer)
+        for file_name in only_files_in_folder:
+            univeristyTwoModulesFile = file_name
+            consumer.send_message({"progress": 2 , "type": 0 , "message": "Starting module conversions"})
+            consumer.send_message({"progress": 3 , "type": 10, "message": "First modules file translated to english successfully"})
+            secondUniversityModules = translateModules(univeristyTwoModulesFile , consumer)
+            consumer.send_message({"progress": 4 , "type": 10, "message": "Second modules file translated to english successfully"})
+            data_list_first = []
+            data_list_second = []
+            consumer.send_message( {"progress": 6 , "type": 10, "message": "Starting to find similarities between modules"})
+            filteredFirstUniversityModules , filteredSecondUniversityModules = filter_modules_by_workload(firstUniversityModules, secondUniversityModules)
+            count = 2
+            for module in filteredFirstUniversityModules:
+                for module2 in filteredSecondUniversityModules:
+                    text1 = module.name if(module.moduleContent == "This course has not yet been described...") else module.moduleContent
+                    text2 = module2.name if(module2.moduleContent == "This course has not yet been described...") else module2.moduleContent
+                    similarity = find_text_similarity_spacy(text1, text2, nlp)
+                    consumer.send_message({"progress": 5 * count , "type": 2 if similarity else 3, "message": f"{module.name} - {module2.name} are similar : {similarity}"})
+                    if(similarity):
+                        similar_modules_m1 = []
+                        similar_modules_m2 = []
+                        similar_modules_m1.append(module2.uri)
+                        similar_modules_m2.append(module.uri)
+                        module['similar_modules'] = similar_modules_m1
+                        module2['similar_modules'] = similar_modules_m2
+                        data_list_first.append(module)
+                        data_list_second.append(module2)
+                        consumer.send_message({"progress": 50 , "type": 10, "message": "Starting to find similarities between modules"})
+                count = count + 0.1    
+                
+            add_predicate_for_module_similarity(universityOneModulesFile, univeristyTwoModulesFile, data_list_first, data_list_second, consumer)
+    else:
+        consumer.send_message({"progress": 100 , "type": 12, "message": "No Comparable Modules found"})      
     # Moving New hasModules file to Similarity Folder
     source_path = universityOneModulesFile
     filename_without_extension = os.path.splitext(os.path.basename(source_path))[0]
