@@ -16,13 +16,14 @@ def get_courses_from_university(request):
     try:
         # Parse JSON data from the request body
         data = json.loads(body)
-        universityName = data.get('universityName','')
-        universityUri = data.get('universityUri','')
+        body = json.loads(data['body'])
+        universityName = body.get('universityName','')
+        universityUri = body.get('universityUri','')
 
         # SPARQL query to retrieve university names and course names
         sparql_query = get_course_from_university_query(universityUri, universityName)
 
-        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
+        server = sparql.SPARQLServer('http://10.57.14.199:9999/blazegraph/sparql')
 
         qresponse = server.query(sparql_query)
         course_list = []

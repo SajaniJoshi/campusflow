@@ -10,7 +10,7 @@ from django.views.decorators.http import require_GET
 @require_GET
 def get_universities(request):
     try:
-        server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
+        server = sparql.SPARQLServer('http://10.57.14.199:9999/blazegraph/sparql')
 
         qresponse = server.query(university_list_query)
         data = []

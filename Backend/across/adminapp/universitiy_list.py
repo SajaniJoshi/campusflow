@@ -4,7 +4,7 @@ from pymantic import sparql
 
 
 def get_all_universities(request):
-    server = sparql.SPARQLServer('http://16.171.152.55/bigdata/sparql')
+    server = sparql.SPARQLServer('http://10.57.14.199:9999/blazegraph/sparql')
 
     qresponse = server.query(university_list_query)
     data_list = []

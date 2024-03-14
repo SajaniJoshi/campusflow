@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://tuc.web.engineering/module#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://tuc.web.engineering/module#20a33d07-e17d-11ee-8094-b03cdc244b9e">
+    <rdf:type rdf:resource="http://tuc.web.engineering/module#"/>
+    <ns1:hasModuleNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></ns1:hasModuleNumber>
+    <ns1:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></ns1:hasName>
+    <ns1:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></ns1:hasContent>
+  </rdf:Description>
+</rdf:RDF>
