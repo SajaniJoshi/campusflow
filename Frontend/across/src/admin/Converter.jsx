@@ -10,7 +10,7 @@ const Converter = () => {
   const [messages, setMessages] = useState([]);
   const [styleType, setStyleType] = useState(0);
   const navigate = useNavigate();
-  const socketUrl = 'ws://localhost:8000/ws/updates';
+  const socketUrl = 'ws://13.53.200.227/ws/updates';
   const location = useLocation();
 
   // Access the state object from location

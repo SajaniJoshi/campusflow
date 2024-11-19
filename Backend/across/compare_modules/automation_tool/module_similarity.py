@@ -19,7 +19,7 @@ def read_modules_and_compare(universityOneModulesFile, only_files_in_folder, con
      pass
     else:
      ssl._create_default_https_context = _create_unverified_https_context
-    nlp = spacy.load('en_core_web_lg')
+    nlp = spacy.load('en_core_web_sm')
     if len(only_files_in_folder) > 0:
         firstUniversityModules = translateModules(universityOneModulesFile, consumer)
         for file_name in only_files_in_folder:
