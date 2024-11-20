@@ -150,7 +150,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ALLOWED_ORIGINS = [
      'http://campusflowfrontend.s3-website.eu-north-1.amazonaws.com',  # Replace with your React frontend URL
-     "http://localhost:5173"
+     "http://localhost:5173",
+     "http://frontend-across.s3-website.eu-north-1.amazonaws.com"
 ]
 
 CORS_ALLOW_METHODS = [

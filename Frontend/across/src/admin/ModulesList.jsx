@@ -15,7 +15,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AdminNavbar from "./components/Navbar/AdminNavbar";
 import { api, getAllModules } from "../api/externalApi";
-import { getCoursesOfParticularUniversity, getUniversities } from "../api/compareModuleApi";
+import {
+  getCoursesOfParticularUniversity,
+  getUniversities,
+} from "../api/compareModuleApi";
 
 const ModulesList = () => {
   const [universities, setUniversities] = useState([]);
@@ -46,7 +49,7 @@ const ModulesList = () => {
     setToken(authToken);
   }, []);
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     const form = event.currentTarget;
     event.preventDefault();
     if (form.checkValidity() == true) {
@@ -55,7 +58,7 @@ const ModulesList = () => {
     }
   };
 
-  const handleSubmitUpdate = event => {
+  const handleSubmitUpdate = (event) => {
     const form = event.currentTarget;
     event.preventDefault();
     if (form.checkValidity() == true) {
@@ -65,18 +68,8 @@ const ModulesList = () => {
   };
 
   const postAddData = () => {
-    console.log(JSON.stringify({
-      email: "dansari@gmail.com",
-      university: addUniversityUri,
-      course: addCourseUri,
-      module_name: moduleName,
-      module_number: moduleId,
-      module_content: moduleContent,
-      module_credit_points: modulePoints,
-    }))
-    api.post("/adminapp/insertModule", {
-      method: "POST",
-      body: JSON.stringify({
+    console.log(
+      JSON.stringify({
         email: "dansari@gmail.com",
         university: addUniversityUri,
         course: addCourseUri,
@@ -84,10 +77,23 @@ const ModulesList = () => {
         module_number: moduleId,
         module_content: moduleContent,
         module_credit_points: modulePoints,
-      }),
-    })
-      .then(response => response.json())
-      .then(json => {
+      })
+    );
+    api
+      .post("/adminapp/insertModule", {
+        method: "POST",
+        body: JSON.stringify({
+          email: "dansari@gmail.com",
+          university: addUniversityUri,
+          course: addCourseUri,
+          module_name: moduleName,
+          module_number: moduleId,
+          module_content: moduleContent,
+          module_credit_points: modulePoints,
+        }),
+      })
+      .then((response) => response.json())
+      .then((json) => {
         if (json.message == "Module Insertion successful.") {
           getModuleList(selectedCourseUri, selectedCourse);
           toast("Module Added Successfully");
@@ -96,7 +102,7 @@ const ModulesList = () => {
         }
         handleCloseAddModal();
       })
-      .catch(error => console.error(error));
+      .catch((error) => console.error(error));
   };
 
   const postUpdateData = () => {
@@ -110,28 +116,29 @@ const ModulesList = () => {
       module_credit_points: currentModule.moduleCreditPoints,
       module_uri: currentModule.moduleUri,
     });
-    api.post("adminapp/updateModule", {
-      body: JSON.stringify({
-        email: "dansari@gmail.com",
-        university: selectedUniversityName,
-        course: selectedCourse,
-        module_name:
-          moduleName.length == 0 ? currentModule.moduleName : moduleName,
-        module_number:
-          moduleId.length == 0 ? currentModule.moduleNumber : moduleId,
-        module_content:
-          moduleContent.length == 0
-            ? currentModule.moduleContent.replace("\n", "\\n")
-            : moduleContent,
-        module_credit_points:
-          modulePoints.length == 0
-            ? currentModule.moduleCreditPoints
-            : modulePoints,
-        module_uri: currentModule.moduleUri,
-      }),
-    })
-      .then(response => response.json())
-      .then(json => {
+    api
+      .post("adminapp/updateModule", {
+        body: JSON.stringify({
+          email: "dansari@gmail.com",
+          university: selectedUniversityName,
+          course: selectedCourse,
+          module_name:
+            moduleName.length == 0 ? currentModule.moduleName : moduleName,
+          module_number:
+            moduleId.length == 0 ? currentModule.moduleNumber : moduleId,
+          module_content:
+            moduleContent.length == 0
+              ? currentModule.moduleContent.replace("\n", "\\n")
+              : moduleContent,
+          module_credit_points:
+            modulePoints.length == 0
+              ? currentModule.moduleCreditPoints
+              : modulePoints,
+          module_uri: currentModule.moduleUri,
+        }),
+      })
+      .then((response) => response.json())
+      .then((json) => {
         if (json.message == "Module Updation successful.") {
           getModuleList(selectedCourseUri, selectedCourse);
           toast("Module Updated Successfully");
@@ -140,23 +147,23 @@ const ModulesList = () => {
         }
         handleCloseUpdateModal();
       })
-      .catch(error => console.error(error));
+      .catch((error) => console.error(error));
   };
 
-  const deleteModule = uri => {
-    api.post("/adminapp/deleteModule", {
-      
-      body: JSON.stringify({
-        email: "dansari@gmail.com",
-        module_uri: uri,
-      }),
-    })
-      .then(response => response.json())
-      .then(json => {
+  const deleteModule = (uri) => {
+    api
+      .post("/adminapp/deleteModule", {
+        body: JSON.stringify({
+          email: "dansari@gmail.com",
+          module_uri: uri,
+        }),
+      })
+      .then((response) => response.json())
+      .then((json) => {
         console.log(json);
         if (json.message == "Module deletion successful.") {
-          setModules(modules =>
-            modules.filter(item => {
+          setModules((modules) =>
+            modules.filter((item) => {
               return item.moduleUri !== uri;
             })
           );
@@ -165,7 +172,7 @@ const ModulesList = () => {
           toast("Failed to delete module");
         }
       })
-      .catch(error => console.error(error));
+      .catch((error) => console.error(error));
   };
 
   const handleCloseAddModal = () => setShowAddModal(false);
@@ -175,118 +182,87 @@ const ModulesList = () => {
   };
 
   const handleClose = () => setShow(false);
-  const handleShow = module => {
+  const handleShow = (module) => {
     setCurrentModule(module);
     setShow(true);
   };
 
-  const handleShowUpdate = module => {
+  const handleShowUpdate = (module) => {
     console.log(JSON.stringify(module));
     setCurrentModule(module);
     setShowUpdateModal(true);
   };
 
   useEffect(() => {
-    async function fetchUniversities() {
-      try {
-      const retrievedUniversities = await getUniversities();
-      if (
-      retrievedUniversities.status === 200 &&
-      retrievedUniversities.statusText === "OK"
-      ) {
-      setUniversities(retrievedUniversities.data);
-      }
-      } catch (error) {
-      console.log("error fetching universities");
-      }
-      }
-      fetchUniversities();
-    // api.get("adminapp/universitieslist")
-    //   .then(response => response.json())
-    //   .then(json => {
-    //     setUniversities(json);
-    //     setUniversitiesAdd(json);
-    //   })
-    //   .catch(error => console.error(error));
+    api
+      .get("adminapp/universitieslist")
+      .then((response) => response.json())
+      .then((json) => {
+        setUniversities(json);
+        setUniversitiesAdd(json);
+      })
+      .catch((error) => console.error(error));
   }, []);
 
-  const onClickUniversity = item => {
-    getCoursesList(item.uri, item.name, false);
-  };
-
-  const onClickCourse = item => {
+  const onClickCourse = (item) => {
+    console.log(item.courseName);
+    console.log(item.courseUri);
     setSelectedCourse(item.courseName);
     setSelectedCourseUri(item.courseUri);
-    setLoadingModules(1);
-    getModuleList(item.courseUri, item.courseName);
+
+    getModuleList();
   };
 
-  const onClickUniversityAdd = item => {
-    getCoursesList(item.uri, item.name, true);
-    setAddUniversityUri(item.name);
+  const onClickUniversityAdd = (item) => {
+    console.log(item.name, item.uri);
+    setSelectedUniversityName(item.name);
+    setSelectedUniversityUri(item.uri);
+    getCoursesList();
+    // setAddUniversityUri(item.name);
   };
 
-  const onClickCourseAdd = item => {
+  const onClickCourseAdd = (item) => {
     setSelectedCourse(item.courseName);
     setAddCourseUri(item.courseName);
   };
 
   const getModuleList = (uri, name) => {
-    api.post("/modules/", {
-      body: JSON.stringify({
-        universityUri: selectedUniversityUri,
-        courseUri: uri,
-        courseName: name,
-      }),
-    })
-      .then(response => response.json())
-      .then(json => {
+    api
+      .post("/modules/", {
+        body: JSON.stringify({
+          universityUri: selectedUniversityUri,
+          courseUri: uri,
+          courseName: name,
+        }),
+      })
+      .then((response) => response.json())
+      .then((json) => {
         setModules(json.modules);
         setLoadingModules(0);
       })
-      .catch(error => console.error(error));
+      .catch((error) => console.error(error));
   };
 
-const getCoursesList = (uri, name, isAdd) => {
-  async function fetchCoursesOfParticularUniversity() {
-    try {
-    const coursesOfParticularUniversity= await getCoursesOfParticularUniversity();
-    if (
-      coursesOfParticularUniversity.status === 200 &&
-      coursesOfParticularUniversity.statusText === "OK"
-    ) {
-      setCourses(coursesOfParticularUniversity.data);
-      setSelectedUniversityUri(uri);
-      setSelectedUniversityName(name);
-    }
-    } catch (error) {
-    console.log("error fetching cources");
-    }
-    }
-    fetchCoursesOfParticularUniversity();
-  // api.post("/courses/", {
-  //   body: JSON.stringify({
-  //     universityUri: uri,
-  //     universityName: name,
-  //   }),
-  // })
-  //   .then(response => {
-  //     if (!response.ok) {
-  //       throw new Error('Network response was not ok');
-  //     }
-  //     return response.json();
-  //   })
-  //   .then(json => {
-  //     if (!isAdd) {
-  //       setCourses(json.courses);
-  //     } else {
-  //       setCoursesAdd(json.courses);
-  //     }
-  //     setSelectedUniversityUri(uri);
-  //     setSelectedUniversityName(name);
-  //   })
-  //   .catch(error => console.error(error));
-};
+  const getCoursesList = (uri, name, isAdd) => {
+    api
+      .post("/courses/", {
+        body: JSON.stringify({
+          universityUri: uri,
+          universityName: name,
+        }),
+      })
+      .then((response) => response.json())
+      .then((json) => {
+        if (!isAdd) {
+          setCourses(json.courses);
+        } else {
+          setCoursesAdd(json.courses);
+        }
+        setSelectedUniversityUri(uri);
+        setSelectedUniversityName(name);
+      })
+      .catch((error) => console.error(error));
+  };
 
   const getAddModuleFormModal = () => {
     return (
@@ -304,7 +280,7 @@ const getCoursesList = (uri, name, isAdd) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                {universitiesForAdd?.map(item => (
+                {universitiesForAdd?.map((item) => (
                   <Dropdown.Item
                     onClick={() => onClickUniversityAdd(item)}
                     key={item.id}
@@ -321,7 +297,7 @@ const getCoursesList = (uri, name, isAdd) => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  {coursesAdd?.map(item => (
+                  {coursesAdd?.map((item) => (
                     <Dropdown.Item
                       key={item.courseNumber}
                       onClick={() => onClickCourseAdd(item)}
@@ -338,7 +314,7 @@ const getCoursesList = (uri, name, isAdd) => {
               <Form.Group as={Col} md="5" controlId="addForm.id">
                 <Form.Label>Id/Number</Form.Label>
                 <Form.Control
-                  onChange={event => setModuleId(event.target.value)}
+                  onChange={(event) => setModuleId(event.target.value)}
                   name="id"
                   required
                   type="text"
@@ -349,7 +325,7 @@ const getCoursesList = (uri, name, isAdd) => {
               <Form.Group as={Col} md="5" controlId="addForm.name">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
-                  onChange={event => setModuleName(event.target.value)}
+                  onChange={(event) => setModuleName(event.target.value)}
                   name="name"
                   required
                   type="text"
@@ -366,7 +342,7 @@ const getCoursesList = (uri, name, isAdd) => {
                   placeholder="Credit Points"
                   required
                   name="points"
-                  onChange={event => setModulePoints(event.target.value)}
+                  onChange={(event) => setModulePoints(event.target.value)}
                 />
                 <Form.Control.Feedback type="invalid">
                   Please provide Credit Points
@@ -377,7 +353,7 @@ const getCoursesList = (uri, name, isAdd) => {
             <Form.Group className="mb-3" controlId="addForm.content">
               <Form.Label>Content</Form.Label>
               <Form.Control
-                onChange={event => setModuleContent(event.target.value)}
+                onChange={(event) => setModuleContent(event.target.value)}
                 name="content"
                 as="textarea"
                 rows={3}
@@ -408,7 +384,7 @@ const getCoursesList = (uri, name, isAdd) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                {universitiesForAdd?.map(item => (
+                {universitiesForAdd?.map((item) => (
                   <Dropdown.Item
                     onClick={() => onClickUniversityAdd(item)}
                     key={item.id}
@@ -425,7 +401,7 @@ const getCoursesList = (uri, name, isAdd) => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  {coursesAdd?.map(item => (
+                  {coursesAdd?.map((item) => (
                     <Dropdown.Item
                       key={item.courseNumber}
                       onClick={() => onClickCourseAdd(item)}
@@ -443,7 +419,7 @@ const getCoursesList = (uri, name, isAdd) => {
                 <Form.Label>Id/Number</Form.Label>
                 <Form.Control
                   defaultValue={currentModule?.moduleNumber}
-                  onChange={event => setModuleId(event.target.value)}
+                  onChange={(event) => setModuleId(event.target.value)}
                   name="id"
                   required
                   type="text"
@@ -455,7 +431,7 @@ const getCoursesList = (uri, name, isAdd) => {
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   defaultValue={currentModule?.moduleName}
-                  onChange={event => setModuleName(event.target.value)}
+                  onChange={(event) => setModuleName(event.target.value)}
                   name="name"
                   required
                   type="text"
@@ -473,7 +449,7 @@ const getCoursesList = (uri, name, isAdd) => {
                   placeholder="Credit Points"
                   required
                   name="points"
-                  onChange={event => setModulePoints(event.target.value)}
+                  onChange={(event) => setModulePoints(event.target.value)}
                 />
                 <Form.Control.Feedback type="invalid">
                   Please provide Credit Points
@@ -485,7 +461,7 @@ const getCoursesList = (uri, name, isAdd) => {
               <Form.Label>Content</Form.Label>
               <Form.Control
                 defaultValue={currentModule?.moduleContent}
-                onChange={event => setModuleContent(event.target.value)}
+                onChange={(event) => setModuleContent(event.target.value)}
                 name="content"
                 as="textarea"
                 rows={3}
@@ -542,9 +518,9 @@ const getCoursesList = (uri, name, isAdd) => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            {universities?.map(item => (
+            {universities?.map((item) => (
               <Dropdown.Item
-                onClick={() => onClickUniversity(item)}
+                onClick={() => onClickUniversityAdd(item)}
                 key={item.id}
               >
                 {item.name}
@@ -559,7 +535,7 @@ const getCoursesList = (uri, name, isAdd) => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              {courses?.map(item => (
+              {courses?.map((item) => (
                 <Dropdown.Item
                   key={item.courseNumber}
                   onClick={() => onClickCourse(item)}
@@ -574,7 +550,7 @@ const getCoursesList = (uri, name, isAdd) => {
           Add New Module
         </Button>
       </div>
-      {loadingModule == 0 && modules?.length > 0 && (
+      {modules?.length > 0 && (
         <div>
           <Table striped bordered hover>
             <thead>
@@ -586,7 +562,7 @@ const getCoursesList = (uri, name, isAdd) => {
               </tr>
             </thead>
             <tbody>
-              {modules.map(module => {
+              {modules.map((module) => {
                 return (
                   <tr key={module.moduleNumber}>
                     <td>{module.moduleNumber}</td>
